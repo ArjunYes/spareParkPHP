@@ -2,14 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // background-image: url(images/blob-haikei.svg);
     font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-image: url(images/blob-haikei.svg);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navbar {
     width: 100%;
     z-index: 999;
-    color: red;
+    color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -22,7 +30,7 @@
     a {
         text-decoration: none;
         list-style: none;
-        color: brown;
+        color: white;
         // border: 1px solid orange;
     }
 
@@ -40,7 +48,13 @@
         justify-content: center;
         align-items: center;
         width: 30%;
+        overflow: hidden;
         // border: 1px solid red;
+        img{
+            width: 60px;
+            height: 100px;
+            color: white;
+        }
 
     }
 
@@ -52,11 +66,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 400px;
-    background-color: red;
-    border: 2px solid black;
+    min-height: 300px;
+    background:rgba(251, 255, 255, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+    border-radius: 10px;
+    min-width: 250px;
+    margin: 100px 0 100px 0;
 
+    
+    
     .form {
         display: flex;
         flex-direction: column;
@@ -65,26 +84,42 @@
         margin: 10px;
     }
 
+    .form_head{
+        color: white;
+        margin: 10px;
+    }
+    p{
+        color: white;
+        margin: 5px;
+        text-align: left;
+        font-size: 12px;
+    span{
+        color: aqua;
+    }
+    }
 
 }
 
 .footer{
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
 }
 
 .text_box {
     padding: 5px;
-    margin: 5px;
+    margin-bottom: 15px;
     border: none;
     border-radius: 3px;
-
     outline: none;
+    width: 100%;
 }
 
 .btn {
+    width: 100%;
     padding: 5px;
     border: none;
     border-radius: 3px;
@@ -94,6 +129,6 @@
     color: white;
 
     &:hover {
-        
+        background-color: white;
     }
 }
