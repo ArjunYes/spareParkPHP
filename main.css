@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(images/blob-haikei.svg);
+  background-image: url(images/stacked-peaks-haikei.svg);
 }
 
 .wrapper {
@@ -24,11 +24,16 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: rgba(251, 255, 255, 0.3);
+}
+.navbar h2 {
+  margin-left: 20px;
 }
 .navbar ul,
 .navbar li,
 .navbar a {
   text-decoration: none;
+  font-size: 14px;
   list-style: none;
   color: white;
 }
@@ -36,7 +41,7 @@ body {
   width: 70%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 .navbar .logo {
@@ -45,10 +50,11 @@ body {
   align-items: center;
   width: 30%;
   overflow: hidden;
+  color: white;
 }
 .navbar .logo img {
   width: 60px;
-  height: 100px;
+  height: 80px;
   color: white;
 }
 
@@ -57,8 +63,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 300px;
-  background: rgba(251, 255, 255, 0.1);
+  min-height: 250px;
+  background: rgba(251, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   min-width: 250px;
@@ -73,7 +79,8 @@ body {
 }
 .form_container .form_head {
   color: white;
-  margin: 10px;
+  margin-bottom: 20px;
+  letter-spacing: 6px;
 }
 .form_container p {
   color: white;
@@ -83,15 +90,25 @@ body {
 }
 .form_container p span {
   color: aqua;
+  cursor: pointer;
 }
 
 .footer {
+  position: absolute;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
   color: white;
+  background: rgba(251, 255, 255, 0.3);
+}
+.footer p {
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-size: 12px;
 }
 
 .text_box {
@@ -112,7 +129,13 @@ body {
   background-color: transparent;
   border: 1px solid white;
   color: white;
+  margin-bottom: 10px;
 }
 .btn:hover {
   background-color: white;
+  color: rgb(182, 83, 83);
+}
+
+.filter-green {
+  filter: invert(100%) sepia(0%) saturate(0%) brightness(118%) contrast(119%);
 }/*# sourceMappingURL=main.css.map */
