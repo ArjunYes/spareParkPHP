@@ -16,7 +16,7 @@
     <div class="wrapper">
         <nav class="navbar">
             <div class="logo ">
-                <img class="filter-green" src="images/big-parking-sign-svgrepo-com.svg" alt="">
+                <img  src="images/big-parking-sign-svgrepo-com.svg" alt="">
                 <h2 >Spare Park</h2>
             </div>
             <ul class="navitems">
@@ -27,11 +27,13 @@
 
         <div class="form_container">
             <form class="form" action="" method="post">
-                <h2 class="form_head">LOGIN</h2>
-                <input class="text_box" type="text" name="" placeholder="Username/email">
+                <h2 class="form_head">REGISTER</h2>
+                <input class="text_box" type="text" placeholder="First name">
+                <input class="text_box" type="text" placeholder="Last name">
+                <input class="text_box" type="text" placeholder="Email id">
                 <input class="text_box" type="text" placeholder="Password">
+                <input class="text_box" type="text" placeholder="Re-enter password">
                 <input class="btn" type="submit" value="Login">
-                <p>Dont have an account ? <span>Register</span></p>
             </form>
         </div>
 

@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(images/stacked-peaks-haikei.svg);
+  background-color: #F5f5f5;
 }
 
 .wrapper {
@@ -17,17 +17,18 @@ body {
 
 .navbar {
   width: 100%;
-  z-index: 999;
-  color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background: rgba(251, 255, 255, 0.3);
+  border: 1px solid black;
+  flex: 1;
 }
 .navbar h2 {
   margin-left: 20px;
+  color: #6d6d6d;
+  letter-spacing: 5px;
+  border: 1px solid black;
 }
 .navbar ul,
 .navbar li,
@@ -35,27 +36,28 @@ body {
   text-decoration: none;
   font-size: 14px;
   list-style: none;
-  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: 1px solid black;
 }
 .navbar .navitems {
-  width: 70%;
+  border: 1px solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex: 4;
 }
 .navbar .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
   overflow: hidden;
-  color: white;
+  flex: 2;
 }
 .navbar .logo img {
   width: 60px;
   height: 80px;
-  color: white;
 }
 
 .form_container {
@@ -69,6 +71,7 @@ body {
   border-radius: 10px;
   min-width: 250px;
   margin: 100px 0 100px 0;
+  color: #6d6d6d;
 }
 .form_container .form {
   display: flex;
@@ -78,18 +81,17 @@ body {
   margin: 10px;
 }
 .form_container .form_head {
-  color: white;
   margin-bottom: 20px;
   letter-spacing: 6px;
 }
 .form_container p {
-  color: white;
+  color: #6d6d6d;
   margin: 5px;
   text-align: left;
   font-size: 12px;
 }
 .form_container p span {
-  color: aqua;
+  color: red;
   cursor: pointer;
 }
 
@@ -133,9 +135,10 @@ body {
 }
 .btn:hover {
   background-color: white;
-  color: rgb(182, 83, 83);
+  color: aqua;
+  cursor: pointer;
 }
 
 .filter-green {
-  filter: invert(100%) sepia(0%) saturate(0%) brightness(118%) contrast(119%);
+  filter: invert(60%) sepia(0%) saturate(0%) brightness(118%) contrast(119%);
 }/*# sourceMappingURL=main.css.map */
