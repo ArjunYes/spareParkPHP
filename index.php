@@ -24,9 +24,9 @@
                     <!-- <h2 >Spare Park</h2> -->
                 </div>
                 <ul class="navitems">
-                    <li><a href="#about">Contact Us </a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">About</a></li>
+                    <li><a href="#contact">Contact Us </a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#platforms">Platforms</a></li>
                 </ul>
             </nav>
 
@@ -34,7 +34,7 @@
                 <div class="title_desc">
                     <h1 class="title">SPARE PARK.</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum officia cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem perferendis officiis explicabo ipsam distinctio, facilis quos!</p>
-                    <button class="big-btn ">LEARN MORE <i class="fa-solid fa-arrow-down "></i></button>
+                    <a class="big-btn " href="#about">LEARN MORE <i class="fa-solid fa-arrow-down "></i></a>
                 </div>
 
                 <div class="form_container">
@@ -52,18 +52,23 @@
 
 
         <div id="about" class="about">
-
             <div class="title_desc">
-                <h1 class="title">SPARE PARK.</h1>
+                <h1 class="title">TRAVEL AND PARK AT EASE.</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum officia cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem perferendis officiis explicabo ipsam distinctio, facilis quos!</p>
-                <button class="big-btn ">LEARN MORE <i class="fa-solid fa-arrow-down "></i></button>
             </div>
             <div class="image_container">
-                <img src="" alt="">
+                <img src="images/10172815_8399 (1).jpg" alt="">
             </div>
-
         </div>
 
+
+        <div id="platforms" class="platforms">
+            <h1>Platforms</h1>
+            <div>
+                <i class="fa-light fa-mobile"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
+            </div>
+        </div>
 
 
 
