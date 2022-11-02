@@ -63,11 +63,25 @@
 
 
         <div id="platforms" class="platforms">
-            <h1>Platforms</h1>
-            <div>
-                <i class="fa-light fa-mobile"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
+            <h1>Platforms.</h1>
+            <div class="categories">
+                <div class="platform">
+                    <i class="small_logo fa fa-regular fa-mobile"></i>
+                    <h2>Mobile</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
+                </div>
+                <div class="platform">
+                    <i class="small_logo fa fa-thin fa-tablet"></i>
+                    <h2>Tablets</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
+                </div>
+                <div class="platform">
+                    <i class="small_logo fa  fa-regular fa-desktop"></i>
+                    <h2>Desktop</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
+                </div>
             </div>
+
         </div>
 
 

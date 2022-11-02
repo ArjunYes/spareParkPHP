@@ -222,6 +222,36 @@ body {
 
 .platforms {
   background-color: #6d6d6d;
-  min-height: 50vh;
+  min-height: 70vh;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.platforms h1 {
+  text-align: center;
+  margin: 20px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+.platforms .platform {
+  border-right: 1px solid rgb(199, 199, 199);
+  padding: 25px;
+  text-align: center;
+  line-height: 25px;
+}
+.platforms .platform h2 {
+  margin: 20px;
+}
+.platforms .categories {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.platforms .small_logo {
+  margin: 10px;
+  font-size: 30px;
 }/*# sourceMappingURL=main.css.map */
