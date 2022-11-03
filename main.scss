@@ -96,7 +96,7 @@ body {
 
         }
 
-        .active{
+        .active {
             color: red;
         }
 
@@ -147,7 +147,7 @@ body {
 
 
     .form_container {
-        
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -420,18 +420,26 @@ body {
     color: red;
 }
 
-.user_groups{
+.user_groups {
     // border: 1px solid red;
-    display:  flex;
+    display: flex;
     flex-direction: row;
-    flex:1;
+    flex: 1;
     width: 100%;
     align-items: center;
     justify-content: center;
 
-    .btn{
+    .btn {
         height: 100px;
         width: 100px;
         margin: 10px;
+
+
     }
+}
+.activeUser {
+    background-color: #6d6d6d;
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out all .2s
 }

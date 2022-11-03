@@ -352,4 +352,11 @@ body {
   height: 100px;
   width: 100px;
   margin: 10px;
+}
+
+.activeUser {
+  background-color: #6d6d6d;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out all 0.2s;
 }/*# sourceMappingURL=main.css.map */

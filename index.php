@@ -26,7 +26,8 @@
                     <!-- <h2 >Spare Park</h2> -->
                 </div>
                 <ul class="navitems">
-                    <li><a class="active" href="#home">Home </a></li>
+                    <li><a class="
+                    " href="#home">Home </a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#platforms">Platforms</a></li>
                     <li><a href="#contactus">Contact Us </a></li>
@@ -43,10 +44,10 @@
 
                 <div class="form_container">
                     <form class="form" action="" method="post">
-                        <h2 class="form_head">LOGIN AS <span>SPACE FINDER.</span> </h2>
+                        <h2 class="form_head">LOGIN AS <span id="spaceFindertext" >SPACE FINDER.</span>  <span id="spaceOwnertext">SPACE OWNER.</span> </h2>
                         <div class="user_groups">
-                            <button id="spaceFinder" value="spaceFinder" class="btn">SPACE FINDER.</button>
-                            <button id="spaceOwner" value="spaceOwner" class="btn">SPACE OWNER.</button>
+                            <button onclick="switchUser(event)" id="spaceFinder" value="spaceFinder" class="btn activeUser">SPACE FINDER.</button>
+                            <button onclick="switchUser(event)" id="spaceOwner" value="spaceOwner" class="btn">SPACE OWNER.</button>
 
                         </div>
                         <input class="text_box" type="text" name="" placeholder="Username / email">
