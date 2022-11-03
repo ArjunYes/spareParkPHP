@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spare Park</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@
 
             <div id="home" class="content_wrapper">
                 <div class="title_desc">
-                    <h1 class="title">SPARE PARK.</h1>
+                    <h1 class="title">WELCOME TO <span class="active">SPARE PARK.</span> </h1>
 
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum officia cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem perferendis officiis explicabo ipsam distinctio, facilis quos!</p>
                     <a class="big-btn " href="#about"> EXPLORE SPACES <i class="fa-solid fa-arrow-down "></i></a>
@@ -44,7 +44,7 @@
 
                 <div class="form_container">
                     <form class="form" action="" method="post">
-                        <h2 class="form_head">LOGIN AS <span id="spaceFindertext" >SPACE FINDER.</span>  <span id="spaceOwnertext">SPACE OWNER.</span> </h2>
+                        <h2 class="form_head">LOGIN AS <span id="spaceFindertext">SPACE FINDER.</span> <span id="spaceOwnertext">SPACE OWNER.</span> </h2>
                         <div class="user_groups">
                             <button onclick="switchUser(event)" id="spaceFinder" value="spaceFinder" class="btn activeUser">SPACE FINDER.</button>
                             <button onclick="switchUser(event)" id="spaceOwner" value="spaceOwner" class="btn">SPACE OWNER.</button>
@@ -56,6 +56,24 @@
                         <p>Dont have an account ? <span onclick="window.location.href = '/spareParkPHP/register.php'"> Register</span></p>
 
                     </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="spaces" class="spaces">
+            <h1>SPACES</h1>
+            <div class="spaceWrapper">
+                <div class="space">
+                    <img src="" alt="">
+                    <p>Location : <span>  E15,2RQ </span>  </p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
                 </div>
             </div>
         </div>
