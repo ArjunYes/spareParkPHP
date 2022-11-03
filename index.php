@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <script src="index.js"></script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,8 +45,8 @@
                     <form class="form" action="" method="post">
                         <h2 class="form_head">LOGIN AS <span>SPACE FINDER.</span> </h2>
                         <div class="user_groups">
-                            <button class="btn">SPACE FINDER.</button>
-                            <button class="btn">SPACE OWNER.</button>
+                            <button id="spaceFinder" value="spaceFinder" class="btn">SPACE FINDER.</button>
+                            <button id="spaceOwner" value="spaceOwner" class="btn">SPACE OWNER.</button>
 
                         </div>
                         <input class="text_box" type="text" name="" placeholder="Username / email">
@@ -151,3 +150,6 @@
 </body>
 
 </html>
+
+
+<script src="index.js"></script>
