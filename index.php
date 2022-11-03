@@ -34,13 +34,19 @@
             <div id="home" class="content_wrapper">
                 <div class="title_desc">
                     <h1 class="title">SPARE PARK.</h1>
+
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum officia cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem perferendis officiis explicabo ipsam distinctio, facilis quos!</p>
-                    <a class="big-btn " href="#about"> EXPLORE LOCATIONS <i class="fa-solid fa-arrow-down "></i></a>
+                    <a class="big-btn " href="#about"> EXPLORE SPACES <i class="fa-solid fa-arrow-down "></i></a>
                 </div>
 
                 <div class="form_container">
                     <form class="form" action="" method="post">
-                        <h2 class="form_head">LOGIN</h2>
+                        <h2 class="form_head">LOGIN AS <span>SPACE FINDER.</span> </h2>
+                        <div class="user_groups">
+                            <button class="btn">SPACE FINDER.</button>
+                            <button class="btn">SPACE OWNER.</button>
+
+                        </div>
                         <input class="text_box" type="text" name="" placeholder="Username / email">
                         <input class="text_box" type="text" placeholder="Password">
                         <input class="btn full-width" type="submit" value="Login">
@@ -135,7 +141,7 @@
 
 
         <footer class="footer">
-            <p> &copy 2022-2023 All rigths reserved spare park.</p>
+            <p> &copy 2022-2023 All rigths reserved spare park. Version 1.0.0</p>
         </footer>
 
     </div>
