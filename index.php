@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
+    <title>Spare Park</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -24,17 +24,18 @@
                     <!-- <h2 >Spare Park</h2> -->
                 </div>
                 <ul class="navitems">
-                    <li><a href="#contact">Contact Us </a></li>
+                    <li><a class="active" href="#home">Home </a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#platforms">Platforms</a></li>
+                    <li><a href="#contactus">Contact Us </a></li>
                 </ul>
             </nav>
 
-            <div class="content_wrapper">
+            <div id="home" class="content_wrapper">
                 <div class="title_desc">
                     <h1 class="title">SPARE PARK.</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum officia cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem perferendis officiis explicabo ipsam distinctio, facilis quos!</p>
-                    <a class="big-btn " href="#about">LEARN MORE <i class="fa-solid fa-arrow-down "></i></a>
+                    <a class="big-btn " href="#about"> EXPLORE LOCATIONS <i class="fa-solid fa-arrow-down "></i></a>
                 </div>
 
                 <div class="form_container">
@@ -81,6 +82,53 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
                 </div>
             </div>
+
+        </div>
+
+
+        <div class="contactus" id="contactus">
+
+            <h1>GET IN TOUCH.</h1>
+            <div class="contact_outer_wrapper">
+                <div class="git">
+                    <div class="contact_info">
+                        <h3>ADDRESS</h3>
+                        21 Lian street <br>
+                        Opp Essex Mall <br>
+                        E12 34U
+                        <br> <br>
+                        21 Lian street <br>
+                        Opp Essex Mall <br>
+                        E12 34U
+                    </div>
+                    <div class="contact_info">
+                        <h3>PHONE</h3>
+                        +44 7845874587 <br>
+                        +44 8745896852
+                        <br> <br>
+                    </div>
+
+                    <div class="contact_info">
+                        <h3>EMAIL</h3>
+                        contact@sparepark@gmail.com
+                        <br> <br>
+                        help@sparepark@gmail.com
+                    </div>
+                </div>
+
+                <div class="gitform">
+
+                    <form class="form" action="" method="post">
+                        <h2 class="">MESSAGE US</h2>
+                        <input class="text_box_c" type="email" name="" placeholder="Email id">
+                        <textarea class="textArea" rows="4" cols="50" placeholder="Type in your msg"></textarea>
+                        <input class="btn" type="submit" value="Send">
+
+                    </form>
+
+                </div>
+            </div>
+
 
         </div>
 

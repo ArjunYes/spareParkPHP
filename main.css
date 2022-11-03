@@ -79,6 +79,16 @@ body {
   cursor: pointer;
   transition: ease-in-out all 0.2s;
 }
+.navbar ul:active,
+.navbar li:active,
+.navbar a:active {
+  color: red;
+}
+.navbar ul .active,
+.navbar li .active,
+.navbar a .active {
+  color: red;
+}
 .navbar .navitems {
   display: flex;
   flex-direction: row;
@@ -236,7 +246,6 @@ body {
   letter-spacing: 8px;
 }
 .platforms .platform {
-  border-right: 1px solid rgb(199, 199, 199);
   padding: 25px;
   text-align: center;
   line-height: 25px;
@@ -254,4 +263,78 @@ body {
 .platforms .small_logo {
   margin: 10px;
   font-size: 30px;
+}
+
+.contactus {
+  background-color: #F5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  padding: 50px;
+}
+.contactus h1 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.contactus .contact_outer_wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.contactus .contact_outer_wrapper .git {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex: 3;
+}
+.contactus .contact_outer_wrapper .git .contact_info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.contactus .contact_outer_wrapper .gitform {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  width: 70%;
+  display: flex;
+  flex: 1;
+}
+.contactus .contact_outer_wrapper .gitform .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactus .contact_outer_wrapper .gitform .form .btn {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.textArea {
+  border: none;
+  outline: none;
+  width: 250px;
+  padding: 10px;
+}
+
+.text_box_c {
+  width: 100%;
+  margin: 10px;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.active {
+  color: red;
 }/*# sourceMappingURL=main.css.map */

@@ -91,6 +91,15 @@ body {
             transition: ease-in-out all .2s
         }
 
+        &:active {
+            color: red;
+
+        }
+
+        .active{
+            color: red;
+        }
+
     }
 
     .navitems {
@@ -297,11 +306,11 @@ body {
     justify-content: center;
 
     .platform {
-        border-right: 1px solid rgb(199, 199, 199);
         padding: 25px;
         text-align: center;
         line-height: 25px;
-        h2{
+
+        h2 {
             margin: 20px;
         }
     }
@@ -314,8 +323,98 @@ body {
         justify-content: center;
     }
 
-    .small_logo{
+    .small_logo {
         margin: 10px;
         font-size: 30px;
     }
+}
+
+
+.contactus {
+    background-color: #F5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    padding: 50px;
+
+    h1 {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .contact_outer_wrapper {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+
+        .git {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            // border: 1px solid red;
+            flex: 3;
+
+            .contact_info {
+                padding: 20px;
+                // border: 1px solid red;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+            }
+        }
+
+        .gitform {
+            // background-color: red;
+
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 20px;
+            width: 70%;
+            display: flex;
+            flex: 1;
+
+            .form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .btn {
+                    margin-top: 10px;
+                    width: 100%;
+                }
+
+            }
+        }
+
+    }
+
+
+}
+
+.textArea {
+    border: none;
+    outline: none;
+    width: 250px;
+    padding: 10px;
+}
+
+.text_box_c {
+    width: 100%;
+    margin: 10px;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.active {
+    color: red;
 }
