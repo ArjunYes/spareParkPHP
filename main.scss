@@ -417,7 +417,7 @@ body {
 }
 
 .active {
-    color: #F08080;
+    color: #CD5C5C;
 }
 
 .user_groups {
@@ -442,4 +442,44 @@ body {
     color: white;
     cursor: pointer;
     transition: ease-in-out all .2s
+}
+
+
+.spaces{
+    width: 100%;
+    background-color: #909497;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    h1{
+        margin: 20px;
+    }
+    h2{
+        text-align: left;
+        border: 1px solid #CD5C5C;
+    }
+    .spaceWrapper{
+        border: 1px solid red;
+        // width: 80%;
+        display:  flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .space{
+        border: 1px solid white;
+
+        .imageWrapper{
+            height: 300px;
+            width: 200px;
+            overflow: hidden;
+            img{
+                
+            }
+        }
+    }
 }

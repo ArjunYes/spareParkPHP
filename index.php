@@ -65,7 +65,9 @@
             <h1>SPACES</h1>
             <div class="spaceWrapper">
                 <div class="space">
-                    <img src="" alt="">
+                    <div class="imageWrapper">
+                        <img src="images/user_images/pexels-photo-1004409.jpeg" alt="">
+                    </div>
                     <p>Location : <span>  E15,2RQ </span>  </p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
@@ -75,7 +77,49 @@
                         <i class="fa-regular fa-star"></i>
                     </div>
                 </div>
+                <div class="space">
+                    <div class="imageWrapper">
+                        <img src="images/user_images/pexels-photo-1004409.jpeg" alt="">
+                    </div>
+                    <p>Location : <span>  E15,2RQ </span>  </p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div class="space">
+                    <div class="imageWrapper">
+                        <img src="images/user_images/pexels-photo-1004409.jpeg" alt="">
+                    </div>
+                    <p>Location : <span>  E15,2RQ </span>  </p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div class="space">
+                    <div class="imageWrapper">
+                        <img src="images/user_images/pexels-photo-9585534.jpeg" alt="">
+                    </div>
+                    <p>Location : <span>  E15,2RQ </span>  </p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                
+                </div>
             </div>
+            <h2>MORE SPACES TO EXPLORE</h2>
         </div>
 
 

@@ -41,3 +41,9 @@ function switchUser(e) {
 //     item.addEventListener('click', switchUser)
 
 // })
+
+
+
+window.onload = (event) =>{
+    
+}
