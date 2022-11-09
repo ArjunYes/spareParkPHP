@@ -362,34 +362,34 @@ body {
 }
 
 .spaces {
+  background-color: #6d6d6d;
   width: 100%;
-  background-color: #909497;
+  margin: auto;
+  color: white;
   display: flex;
   flex-direction: column;
-  color: white;
   align-items: center;
   justify-content: center;
   padding: 50px;
 }
-.spaces h1 {
-  margin: 20px;
-}
-.spaces h2 {
-  text-align: left;
-  border: 1px solid #CD5C5C;
-}
 .spaces .spaceWrapper {
-  border: 1px solid red;
+  margin: 40px;
+  gap: 15px;
+  width: 90%;
+  background-color: red;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20px;
 }
 .spaces .space {
-  border: 1px solid white;
+  background-color: green;
 }
-.spaces .space .imageWrapper {
+.spaces .imageWrapper {
   height: 300px;
   width: 200px;
   overflow: hidden;
+}
+.spaces .imageWrapper img {
+  height: 300px;
 }/*# sourceMappingURL=main.css.map */

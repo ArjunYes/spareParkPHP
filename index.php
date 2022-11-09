@@ -68,7 +68,8 @@
                     <div class="imageWrapper">
                         <img src="images/user_images/pexels-photo-1004409.jpeg" alt="">
                     </div>
-                    <p>Location : <span>  E15,2RQ </span>  </p>
+                    <p>Location : <span> E15,2RQ </span> </p>
+                    <p>Rate : <span> $10/h </span> </p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -76,12 +77,15 @@
                         <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
+                    <button class="btn">EXPLORE</button>
                 </div>
                 <div class="space">
                     <div class="imageWrapper">
                         <img src="images/user_images/pexels-photo-1004409.jpeg" alt="">
                     </div>
-                    <p>Location : <span>  E15,2RQ </span>  </p>
+                    <p>Location : <span> E15,2RQ </span> </p>
+                    <p>Rate : <span> $10/h </span> </p>
+
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -89,12 +93,16 @@
                         <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
+                    <button class="btn">EXPLORE</button>
+
                 </div>
                 <div class="space">
                     <div class="imageWrapper">
                         <img src="images/user_images/pexels-photo-1004409.jpeg" alt="">
                     </div>
-                    <p>Location : <span>  E15,2RQ </span>  </p>
+                    <p>Location : <span> E15,2RQ </span> </p>
+                    <p>Rate : <span> $10/h </span> </p>
+
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -102,12 +110,16 @@
                         <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
+                    <button class="btn">EXPLORE</button>
+
                 </div>
                 <div class="space">
                     <div class="imageWrapper">
                         <img src="images/user_images/pexels-photo-9585534.jpeg" alt="">
                     </div>
-                    <p>Location : <span>  E15,2RQ </span>  </p>
+                    <p>Location : <span> E15,2RQ </span> </p>
+                    <p>Rate : <span> $10/h </span> </p>
+
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -115,99 +127,101 @@
                         <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
+                    <button class="btn">EXPLORE</button>
+
                 </div>
-                
-                </div>
+
             </div>
             <h2>MORE SPACES TO EXPLORE</h2>
         </div>
+    </div>
 
 
-        <div id="about" class="about">
-            <div class="title_desc">
-                <h1 class="title">TRAVEL AND PARK AT EASE.</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum officia cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem perferendis officiis explicabo ipsam distinctio, facilis quos!</p>
+    <div id="about" class="about">
+        <div class="title_desc">
+            <h1 class="title">TRAVEL AND PARK AT EASE.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum officia cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem perferendis officiis explicabo ipsam distinctio, facilis quos!</p>
+        </div>
+        <div class="image_container">
+            <img src="images/10172815_8399 (1).jpg" alt="">
+        </div>
+    </div>
+
+
+    <div id="platforms" class="platforms">
+        <h1>Platforms.</h1>
+        <div class="categories">
+            <div class="platform">
+                <i class="small_logo fa fa-regular fa-mobile"></i>
+                <h2>Mobile</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
             </div>
-            <div class="image_container">
-                <img src="images/10172815_8399 (1).jpg" alt="">
+            <div class="platform">
+                <i class="small_logo fa fa-thin fa-tablet"></i>
+                <h2>Tablets</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
+            </div>
+            <div class="platform">
+                <i class="small_logo fa  fa-regular fa-desktop"></i>
+                <h2>Desktop</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="contactus" id="contactus">
+
+        <h1>GET IN TOUCH.</h1>
+        <div class="contact_outer_wrapper">
+            <div class="git">
+                <div class="contact_info">
+                    <h3>ADDRESS</h3>
+                    21 Lian street <br>
+                    Opp Essex Mall <br>
+                    E12 34U
+                    <br> <br>
+                    21 Lian street <br>
+                    Opp Essex Mall <br>
+                    E12 34U
+                </div>
+                <div class="contact_info">
+                    <h3>PHONE</h3>
+                    +44 7845874587 <br>
+                    +44 8745896852
+                    <br> <br>
+                </div>
+
+                <div class="contact_info">
+                    <h3>EMAIL</h3>
+                    contact@sparepark@gmail.com
+                    <br> <br>
+                    help@sparepark@gmail.com
+                </div>
+            </div>
+
+            <div class="gitform">
+
+                <form class="form" action="" method="post">
+                    <h2 class="">MESSAGE US</h2>
+                    <input class="text_box_c" type="email" name="" placeholder="Email id">
+                    <textarea class="textArea" rows="4" cols="50" placeholder="Type in your msg"></textarea>
+                    <input class="btn" type="submit" value="Send">
+
+                </form>
+
             </div>
         </div>
 
 
-        <div id="platforms" class="platforms">
-            <h1>Platforms.</h1>
-            <div class="categories">
-                <div class="platform">
-                    <i class="small_logo fa fa-regular fa-mobile"></i>
-                    <h2>Mobile</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
-                </div>
-                <div class="platform">
-                    <i class="small_logo fa fa-thin fa-tablet"></i>
-                    <h2>Tablets</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
-                </div>
-                <div class="platform">
-                    <i class="small_logo fa  fa-regular fa-desktop"></i>
-                    <h2>Desktop</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="contactus" id="contactus">
-
-            <h1>GET IN TOUCH.</h1>
-            <div class="contact_outer_wrapper">
-                <div class="git">
-                    <div class="contact_info">
-                        <h3>ADDRESS</h3>
-                        21 Lian street <br>
-                        Opp Essex Mall <br>
-                        E12 34U
-                        <br> <br>
-                        21 Lian street <br>
-                        Opp Essex Mall <br>
-                        E12 34U
-                    </div>
-                    <div class="contact_info">
-                        <h3>PHONE</h3>
-                        +44 7845874587 <br>
-                        +44 8745896852
-                        <br> <br>
-                    </div>
-
-                    <div class="contact_info">
-                        <h3>EMAIL</h3>
-                        contact@sparepark@gmail.com
-                        <br> <br>
-                        help@sparepark@gmail.com
-                    </div>
-                </div>
-
-                <div class="gitform">
-
-                    <form class="form" action="" method="post">
-                        <h2 class="">MESSAGE US</h2>
-                        <input class="text_box_c" type="email" name="" placeholder="Email id">
-                        <textarea class="textArea" rows="4" cols="50" placeholder="Type in your msg"></textarea>
-                        <input class="btn" type="submit" value="Send">
-
-                    </form>
-
-                </div>
-            </div>
-
-
-        </div>
+    </div>
 
 
 
-        <footer class="footer">
-            <p> &copy 2022-2023 All rigths reserved spare park. Version 1.0.0</p>
-        </footer>
+    <footer class="footer">
+        <p> &copy 2022-2023 All rigths reserved spare park. Version 1.0.0</p>
+    </footer>
 
     </div>
 </body>
