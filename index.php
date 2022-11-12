@@ -1,3 +1,9 @@
+<?php
+
+include_once 'includes/dbh.inc.php'
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +24,25 @@
 </head>
 
 <body>
+
+
+    <?php
+
+    $sql = "SELECT * FROM contact_info;";
+    $result = mysqli_query($conn, $sql);
+    $resultCheck = mysqli_num_rows($result);
+
+    if ($resultCheck > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo $row['email_id'];
+            echo " <script> console.log('DARKKKKE') </script> ";
+        }
+    } else {
+        echo " <script> console.log('DARKKKKE') </script> ";
+    }
+
+    ?>
+
     <div class="wrapper">
         <div class="page_1">
             <nav class="navbar">
