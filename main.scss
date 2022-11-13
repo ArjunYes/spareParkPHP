@@ -8,8 +8,36 @@
 }
 
 body {
+    position: relative;
     color: #6d6d6d;
     scroll-behavior: smooth;
+}
+
+.dialogue {
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    left: 27%;
+    z-index: 50;
+    width: 400px;
+    background-color: #FFF6BD;
+    border: 2px solid black;
+}
+
+#centerpoint {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+#dialog {
+    position: relative;
+
+    width: 600px;
+    margin-left: -300px;
+
+    height: 400px;
+    margin-top: -200px;
 }
 
 .wrapper {
@@ -456,7 +484,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 50px;
-    
+
     .spaceWrapper {
         margin: 40px;
         gap: 15px;
@@ -478,7 +506,8 @@ body {
         height: 300px;
         width: 200px;
         overflow: hidden;
-        img{
+
+        img {
             height: 300px;
         }
     }

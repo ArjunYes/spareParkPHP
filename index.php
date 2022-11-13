@@ -24,6 +24,9 @@ include_once 'includes/dbh.inc.php'
 </head>
 
 <body>
+    <div id="centerpoint">
+        <div id="dialog"></div>
+    </div>
 
 
     <?php
@@ -34,8 +37,8 @@ include_once 'includes/dbh.inc.php'
 
     if ($resultCheck > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
-            echo $row['email_id'];
-            echo " <script> console.log('DARKKKKE') </script> ";
+            // echo $row['email_id'];
+            // echo " <script> console.log('DARKKKKE') </script> ";
         }
     } else {
         echo " <script> console.log('DARKKKKE') </script> ";
@@ -244,9 +247,11 @@ include_once 'includes/dbh.inc.php'
 
 
 
+
     <footer class="footer">
         <p> &copy 2022-2023 All rigths reserved spare park. Version 1.0.0</p>
     </footer>
+
 
     </div>
 </body>
