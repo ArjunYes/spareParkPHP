@@ -8,36 +8,70 @@
 }
 
 body {
-    position: relative;
-    color: #6d6d6d;
+    color: #3d3d3d;
     scroll-behavior: smooth;
+
+}
+
+.stop_Scroll {
+    overflow: hidden;
+}
+
+.body_content {
+    // filter: blur(10px);
+    // display: block;
+
 }
 
 .dialogue {
-    text-align: center;
+    width: 450px;
+    height: 250px;
     position: absolute;
-    bottom: 10%;
-    left: 27%;
-    z-index: 50;
-    width: 400px;
-    background-color: #FFF6BD;
-    border: 2px solid black;
-}
-
-#centerpoint {
     top: 50%;
     left: 50%;
-    position: absolute;
-}
+    transform: translate(-50%, -50%);
+    background-color: #6d6d6d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 999;
+    display: none;
 
-#dialog {
-    position: relative;
+    h1 {
+        margin-bottom: 15px;
+    }
 
-    width: 600px;
-    margin-left: -300px;
+    p {
+        line-height: 25px;
+        // letter-spacing: 1.px;
+    }
 
-    height: 400px;
-    margin-top: -200px;
+    .dialogue_btn {
+        border: 1px solid white;
+        background-color: transparent;
+        padding: 10px 30px 10px 30px;
+        margin-top: 25px;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-style: none;
+        background-color: transparent;
+        padding: 18px;
+        color: white;
+        cursor: pointer;
+    }
+
 }
 
 .wrapper {
@@ -511,4 +545,7 @@ body {
             height: 300px;
         }
     }
+
+
+
 }

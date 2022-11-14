@@ -33,6 +33,11 @@ function switchUser(e) {
     }
 }
 
+function sendMessgae(event){
+    event.preventDefault();
+    console.log("gsfg");
+}
+
 // finder.addEventListener('click', switchUser)
 
 
