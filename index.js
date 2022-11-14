@@ -1,8 +1,16 @@
+window.onload = function () { 
+    document.body.style.overflowY = "hidden";
+    console.log("gsfgsf")
+}
+
 // console.log("WORKING")
 const finderText = document.getElementById("spaceFindertext");
 const ownerText = document.getElementById('spaceOwnertext')
 const finder = document.getElementById("spaceFinder");
 const owner = document.getElementById('spaceOwner')
+
+const body_content = document.getElementById('body_content');
+const dialogue = document.getElementById('dialogue');
 
 finderText.style.display = "block";
 ownerText.style.display = "none";
@@ -33,10 +41,29 @@ function switchUser(e) {
     }
 }
 
-function sendMessgae(event){
+function sendMessgae(event, flag) {
     event.preventDefault();
-    console.log("gsfg");
+    console.log("gsfg", flag);
+
+    if (flag) {
+        // debugger
+        body_content.classList.add('blur');
+        dialogue.style.display = "block"
+        window.scrollTo(0,0);
+        document.body.style.overflow = "hidden";
+
+    }
+
+
+
 }
+
+function closePopup() {
+    body_content.classList.remove('blur');
+    document.body.style.overflow = "visible";
+    dialogue.style.display = "none"
+}
+
 
 // finder.addEventListener('click', switchUser)
 
@@ -49,6 +76,6 @@ function sendMessgae(event){
 
 
 
-window.onload = (event) =>{
-    
+window.onload = (event) => {
+
 }

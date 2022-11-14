@@ -23,14 +23,14 @@ include_once 'includes/dbh.inc.php'
 
 <body class="">
 
-    <div class="dialogue">
-        <button class="close"><i class="fa-solid fa-x"></i></button>
+    <div id="dialogue" class="dialogue">
+        <button onclick="closePopup()" class="close"><i class="fa-solid fa-x"></i></button>
         <h1>Message sent</h1>
         <p>Your message has been sent to the admin.</p>
-        <button class="dialogue_btn">OK</button>
+        <button onclick="closePopup()" class="dialogue_btn">OK</button>
     </div>
 
-    <div class="body_content">
+    <div id="body_content" class="body_content">
 
 
         <div class="wrapper">
@@ -222,7 +222,7 @@ include_once 'includes/dbh.inc.php'
                         <h2 class="">MESSAGE US</h2>
                         <input class="text_box_c" type="email" name="" placeholder="Email id">
                         <textarea class="textArea" rows="4" cols="50" placeholder="Type in your msg"></textarea>
-                        <input onclick="sendMessgae(event)" class="btn" type="submit" value="Send">
+                        <input onclick="sendMessgae(event,true)" class="btn" type="submit" value="Send">
 
                     </form>
 

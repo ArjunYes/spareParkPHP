@@ -15,6 +15,14 @@ body {
   overflow: hidden;
 }
 
+.body_content {
+  display: block;
+}
+
+.blur {
+  filter: blur(10px);
+}
+
 .dialogue {
   width: 450px;
   height: 250px;
@@ -35,10 +43,10 @@ body {
   display: none;
 }
 .dialogue h1 {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .dialogue p {
-  line-height: 25px;
+  margin-bottom: 30px;
 }
 .dialogue .dialogue_btn {
   border: 1px solid white;
