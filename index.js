@@ -43,7 +43,7 @@ function switchUser(e) {
 
 function sendMessgae(event, flag) {
     event.preventDefault();
-    console.log("gsfg", flag);
+    console.log("Sent message", flag);
 
     if (flag) {
         // debugger
@@ -59,6 +59,7 @@ function sendMessgae(event, flag) {
 }
 
 function closePopup() {
+    console.log("Close popup");
     body_content.classList.remove('blur');
     document.body.style.overflow = "visible";
     dialogue.style.display = "none"

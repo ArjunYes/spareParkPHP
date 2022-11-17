@@ -220,9 +220,9 @@ include_once 'includes/dbh.inc.php'
 
                     <form class="form" action="" method="post">
                         <h2 class="">MESSAGE US</h2>
-                        <input class="text_box_c" type="email" name="" placeholder="Email id">
-                        <textarea class="textArea" rows="4" cols="50" placeholder="Type in your msg"></textarea>
-                        <input onclick="sendMessgae(event,true)" class="btn" type="submit" value="Send">
+                        <input class="text_box_c" type="email" name="email_id" placeholder="Email id">
+                        <textarea class="textArea" rows="4" cols="50" name="message" placeholder="Type in your msg"></textarea>
+                        <input  name="sendMsg" onclick="sendMessgae(event,true)" class="btn" type="submit" value="Send">
 
                     </form>
 
@@ -252,17 +252,12 @@ include_once 'includes/dbh.inc.php'
 
 <?php
 
-$sql = "SELECT * FROM contact_info;";
-$result = mysqli_query($conn, $sql);
-$resultCheck = mysqli_num_rows($result);
 
-if ($resultCheck > 0) {
-    while ($row = mysqli_fetch_assoc($result)) {
-        // echo $row['email_id'];
-        // echo " <script> console.log('DARKKKKE') </script> ";
-    }
-} else {
-    echo " <script> console.log('DARKKKKE') </script> ";
+
+if (isset($_POST['sendMsg'])) {    
+    
+    echo " <script> debugger </script> ";
 }
+
 
 ?>

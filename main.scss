@@ -27,7 +27,7 @@ body {
 
 .dialogue {
     width: 450px;
-    height: 250px;
+    // height: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,12 +45,12 @@ body {
     display: none;
 
     h1 {
-        margin-bottom: 30px;
+        margin: 15px;
     }
     
     p {
         // line-height: 25px;
-        margin-bottom: 30px;
+        margin: 15px;
         // letter-spacing: 1.px;
     }
 
