@@ -62,7 +62,44 @@
                     <i class="fa-regular fa-star"></i>
                 </div>
                 <p class="detail_margin">Price :11$/ph</p>
+                <button onclick="window.location.href = '/spareParkPHP/single_space.php'" class=" detail_margin btn_new">VIEW DETIALS</button>
+
+            </div>
+
+            <div class="single_space">
+                <div class="image">
+                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
+                </div>
+                <h3 class="detail_margin space_name">SPACE AT</h3>
+                <p class="detail_margin">Location : E138QR</p>
+                <p class="detail_margin">Check at gmaps</p>
+                <div class="detail_margin star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="detail_margin">Price :11$/ph</p>
                 <button class=" detail_margin btn_new">VIEW DETIALS</button>
+            </div>
+
+            <div class="single_space">
+                <div class="image">
+                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
+                </div>
+                <h3 class="detail_margin space_name">SPACE AT</h3>
+                <p class="detail_margin">Location : E138QR</p>
+                <p class="detail_margin">Check at gmaps</p>
+                <div class="detail_margin star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="detail_margin">Price :11$/ph</p>
+                <button onclick="window.location.href = '/spareParkPHP/spaces_listing.php'" class=" detail_margin btn_new">VIEW DETIALS</button>
             </div>
 
             <div class="single_space">
@@ -209,43 +246,7 @@
                 <button class=" detail_margin btn_new">VIEW DETIALS</button>
             </div>
 
-            <div class="single_space">
-                <div class="image">
-                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
-                </div>
-                <h3 class="detail_margin space_name">SPACE AT</h3>
-                <p class="detail_margin">Location : E138QR</p>
-                <p class="detail_margin">Check at gmaps</p>
-                <div class="detail_margin star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="detail_margin">Price :11$/ph</p>
-                <button class=" detail_margin btn_new">VIEW DETIALS</button>
-            </div>
 
-            <div class="single_space">
-                <div class="image">
-                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
-                </div>
-                <h3 class="detail_margin space_name">SPACE AT</h3>
-                <p class="detail_margin">Location : E138QR</p>
-                <p class="detail_margin">Check at gmaps</p>
-                <div class="detail_margin star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="detail_margin">Price :11$/ph</p>
-                <button class=" detail_margin btn_new">VIEW DETIALS</button>
-            </div>
-
-            
         </div>
 
     </div>

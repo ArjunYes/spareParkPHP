@@ -500,4 +500,44 @@ body {
 .space_listing .image img {
   width: 200px;
   height: 200px;
+}
+
+.space_info {
+  min-height: 82vh;
+  border: 1px solid black;
+  height: 221px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: green;
+}
+.space_info .space_image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border: 1px solid red;
+}
+.space_info .space_image img {
+  height: 200px;
+  width: 200px;
+}
+.space_info .space_image .nav_btn {
+  position: absolute;
+}
+.space_info .space_image .nav_left {
+  left: 0;
+}
+.space_info .space_image .nav_right {
+  right: 0;
+}
+.space_info .space_detail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  background-color: blue;
+  border: 1px solid blue;
 }/*# sourceMappingURL=main.css.map */
