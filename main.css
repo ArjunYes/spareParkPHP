@@ -448,4 +448,56 @@ body {
 }
 .spaces .imageWrapper img {
   height: 300px;
+}
+
+.width_wrapper {
+  width: 85%;
+  margin: auto;
+}
+.width_wrapper .heading {
+  margin: 50px;
+}
+
+.btn_new {
+  padding: 10px;
+  border: 1px solid #6d6d6d;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #6d6d6d;
+  margin: 10px;
+}
+.btn_new:hover {
+  background-color: #6d6d6d;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out all 0.2s;
+}
+
+.space_listing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+.space_listing .single_space {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.space_listing .single_space .detail_margin {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.space_listing .image {
+  height: 200px;
+  width: 200px;
+}
+.space_listing .image img {
+  width: 200px;
+  height: 200px;
 }/*# sourceMappingURL=main.css.map */
