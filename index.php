@@ -148,6 +148,8 @@ include_once 'includes/dbh.inc.php'
 
                 </div>
                 <h2>MORE SPACES TO EXPLORE</h2>
+                <p>Dont have an account ? <span onclick="window.location.href = '/spareParkPHP/spaces_listing.php'"> Register</span></p>
+
             </div>
         </div>
 
