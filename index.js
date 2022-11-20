@@ -3,6 +3,7 @@ window.onload = function () {
     console.log("gsfgsf")
 }
 
+const navitems = document.getElementById("navitems");
 // console.log("WORKING")
 const finderText = document.getElementById("spaceFindertext");
 const ownerText = document.getElementById('spaceOwnertext')
@@ -20,6 +21,13 @@ spaceFinder = "spaceFinder";
 spaceOwner = "spaceOwner"
 
 var userType = 1;
+var isNavOpen = false;
+
+function navOpenClose(e){
+    isNavOpen = !isNavOpen;
+    console.log(isNavOpen)
+    isNavOpen? navitems.style.display = "none" : navitems.style.display = "flex"; 
+}
 
 function switchUser(e) {
     e.preventDefault();
@@ -53,8 +61,6 @@ function sendMessgae(event, flag) {
         document.body.style.overflow = "hidden";
 
     }
-
-
 
 }
 
