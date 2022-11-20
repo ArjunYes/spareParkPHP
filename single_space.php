@@ -28,7 +28,7 @@
             <img class="filter-green" src="images/big-parking-sign-svgrepo-com.svg" alt="">
         </div>
         <ul class="navitems">
-            <li><a class="" href="#home">Home </a></li>
+            <li><a class="" href="index.php/#home">Home </a></li>
             <li><a class="" href="#home">Spaces </a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#platforms">Platforms</a></li>
@@ -45,9 +45,10 @@
             <button class="nav_btn nav_right">RIGHT</button>
         </div>
         <div class="space_detail">
-            <h1 class="space_title">SPACE yuyuIOPPKUU</h1>
+            <h1 class="space_title detail_margin">CRYSTAL AURAS</h1>
             <p class="detail_margin">Location : E138QR</p>
-            <p class="detail_margin">Check at gmaps</p>
+            <p class="detail_margin gmaps"><i class="fa fa-thin fa-location-dot"></i> Check at gmaps  </p>
+            
             <div class="detail_margin star">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -55,8 +56,8 @@
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus officia, incidunt quas voluptatibus velit, at aliquam magni modi possimus, optio maxime eum quisquam tempora explicabo tempore odit autem eveniet molestias?</p>
-            <button class="btn">BOOK NOW</button>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus officia, incidunt quas voluptatibus velit, at aliquam magni modi possimus, optio maxime eum quisquam tempora explicabo tempore odit autem eveniet molestias?</p>
+            <button class="btn_new extra_pad">CHECK AVAILABILITY & BOOK SPACE</button>
         </div>
     </div>
 

@@ -502,42 +502,76 @@ body {
   height: 200px;
 }
 
+.gmaps {
+  color: red;
+  cursor: pointer;
+}
+
 .space_info {
   min-height: 82vh;
-  border: 1px solid black;
   height: 221px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: green;
+}
+.space_info p {
+  font-size: 1.5rem;
+  text-align: center;
 }
 .space_info .space_image {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
-  border: 1px solid red;
+  border-right: 1px solid rgb(198, 198, 198);
 }
 .space_info .space_image img {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
 }
 .space_info .space_image .nav_btn {
   position: absolute;
+  border: none;
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.space_info .space_image .nav_btn:hover {
+  background-color: #6d6d6d;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out all 0.2s;
 }
 .space_info .space_image .nav_left {
-  left: 0;
+  left: 5;
 }
 .space_info .space_image .nav_right {
-  right: 0;
+  right: 5;
 }
 .space_info .space_detail {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   margin: auto;
   justify-content: center;
-  background-color: blue;
-  border: 1px solid blue;
+}
+.space_info .detail_margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.space_info .space_title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.space_info .extra_pad {
+  font-size: 1.1rem;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.space_info .desc {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }/*# sourceMappingURL=main.css.map */
