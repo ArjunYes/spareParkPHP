@@ -21,7 +21,7 @@ include_once 'includes/dbh.inc.php'
 
 </head>
 
-<body class="">
+<body onload="onLoad()" class="">
 
 
 

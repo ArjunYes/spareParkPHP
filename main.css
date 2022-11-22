@@ -211,7 +211,6 @@ body {
     align-items: center;
     justify-content: center;
     grid-column: 7/-1;
-    cursor: pointer;
   }
   .navbar .logo {
     padding: 30px;

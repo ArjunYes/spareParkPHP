@@ -1,6 +1,6 @@
 window.onload = function () { 
     document.body.style.overflowY = "hidden";
-    console.log("gsfgsf")
+    // navitems.style.display = "none"
 }
 
 const navitems = document.getElementById("navitems");
@@ -23,10 +23,12 @@ spaceOwner = "spaceOwner"
 var userType = 1;
 var isNavOpen = false;
 
+
+
 function navOpenClose(e){
-    isNavOpen = !isNavOpen;
     console.log(isNavOpen)
-    isNavOpen? navitems.style.display = "none" : navitems.style.display = "flex"; 
+    // isNavOpen? navitems.style.display = "none" : navitems.style.display = "flex"; 
+    // isNavOpen = !isNavOpen;
 }
 
 function switchUser(e) {
