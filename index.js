@@ -27,8 +27,8 @@ var isNavOpen = false;
 
 function navOpenClose(e){
     console.log(isNavOpen)
-    // isNavOpen? navitems.style.display = "none" : navitems.style.display = "flex"; 
-    // isNavOpen = !isNavOpen;
+    isNavOpen? navitems.style.display = "none" : navitems.style.display = "flex"; 
+    isNavOpen = !isNavOpen;
 }
 
 function switchUser(e) {

@@ -207,68 +207,6 @@ body {
 
 }
 
-@media (max-width : 35em) {
-    .navbar {
-        // display: none;
-
-        .navitems {
-            background-color: gray;
-            // color: white;
-            // background: rgba(251, 255, 255, 0.3);
-
-            // display: none;
-            position: fixed;
-            height: 100%;
-            inset: 0 0 0 50%;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-        ul,
-        li,
-        a {
-            text-decoration: none;
-            font-size: 14px;
-            list-style: none;
-            font-weight: bold;
-            letter-spacing: 2px;
-            color: white;
-            // border: 1px solid black;
-    
-            &:hover {
-                // background-color: #6d6d6d;
-                color: red;
-                cursor: pointer;
-                transition: ease-in-out all .2s
-            }
-    
-            &:active {
-                color: red;
-    
-            }
-    
-            .active {
-                color: red;
-            }
-    
-        }
-
-        .ham_burger {
-            display: block;
-            // background-color: lightcoral;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            grid-column: 7/-1;
-        }
-
-        .logo {
-            padding: 30px;
-        }
-    }
-}
 
 .content_wrapper {
     // border: 1px solid red;
@@ -782,3 +720,22 @@ body {
         margin-bottom: 25px;
     }
 }
+
+.reg_form{
+    background-color: red;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .reg_form_space_owner{
+        // width: ;
+    }
+
+    .text_box{
+
+    }
+}
+

@@ -31,7 +31,7 @@ include_once 'includes/dbh.inc.php'
         <div onclick="navOpenClose(event)" class="logo ">
             <img class="filter-green" src="images/big-parking-sign-svgrepo-com.svg" alt="">
         </div>
-    
+
         <ul class="navitems" id="navitems">
             <li><a class="" href="#home">Home </a></li>
             <li><a href="#about">About</a></li>
@@ -40,8 +40,25 @@ include_once 'includes/dbh.inc.php'
         </ul>
 
         <i onclick="navOpenClose(event)" class="ham_burger fa fa-thin fa-bars"></i>
-    
+
     </nav>
+
+
+    <div class="reg_form">
+        <div class="user_groups">
+            <button onclick="switchUser(event)" id="spaceFinder" value="spaceFinder" class="btn activeUser">SPACE FINDER.</button>
+            <button onclick="switchUser(event)" id="spaceOwner" value="spaceOwner" class="btn">SPACE OWNER.</button>
+
+        </div>
+        <form class="reg_form_space_owner" action="">
+            <input  class="text_box"  type="text" name="name" placeholder="fName">
+            <input  class="text_box"  type="text" name="name" placeholder="lName">
+            <input  class="text_box"  type="text" name="name" placeholder="emailId">
+            <input  class="text_box"  type="text" name="name" placeholder="phoneNumber">
+            <input  class="text_box"  type="text" name="name" placeholder="address">
+            <input class="btn" type="submit" value="REGISTER">
+        </form>
+    </div>
 
 
 
