@@ -51,13 +51,23 @@ include_once 'includes/dbh.inc.php'
 
         </div>
         <form class="reg_form_space_owner" action="">
-            <input  class="text_box"  type="text" name="name" placeholder="fName">
-            <input  class="text_box"  type="text" name="name" placeholder="lName">
-            <input  class="text_box"  type="text" name="name" placeholder="emailId">
-            <input  class="text_box"  type="text" name="name" placeholder="phoneNumber">
-            <input  class="text_box"  type="text" name="name" placeholder="address">
+            <input  class="text_box"  type="text" name="name" placeholder="First Name">
+            <input  class="text_box"  type="text" name="name" placeholder="Last Name">
+            <input  class="text_box"  type="text" name="name" placeholder="Email Id">
+            <input  class="text_box"  type="text" name="name" placeholder="Phone Number">
+            <input  class="text_box"  type="text" name="name" placeholder="Address">
             <input class="btn" type="submit" value="REGISTER">
         </form>
+
+        <form class="reg_form_space_finder" action="">
+            <input  class="text_box"  type="text" name="name" placeholder="First Name">
+            <input  class="text_box"  type="text" name="name" placeholder="Last Name">
+            <input  class="text_box"  type="text" name="name" placeholder="Email Id">
+            <input  class="text_box"  type="text" name="name" placeholder="Phone Number">
+            <input  class="text_box"  type="text" name="name" placeholder="Address">
+            <input class="btn" type="submit" value="REGISTER">
+        </form>
+
     </div>
 
 

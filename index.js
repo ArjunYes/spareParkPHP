@@ -24,6 +24,10 @@ var userType = 1;
 var isNavOpen = false;
 
 
+toggleDisplay = (eId) => {
+    $(eId).is(':visible') ? $(eId).hide() : $(eId).show();
+  }
+
 
 function navOpenClose(e){
     console.log(isNavOpen)
