@@ -1,5 +1,5 @@
 window.onload = function () { 
-    document.body.style.overflowY = "hidden";
+    // document.body.style.overflowY = "hidden";
     // navitems.style.display = "none"
 }
 
