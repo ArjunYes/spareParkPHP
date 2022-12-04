@@ -4,7 +4,7 @@ window.onload = function () {
 }
 
 const navitems = document.getElementById("navitems");
-// console.log("WORKING")
+console.log("WORKING",finderText)
 const finderText = document.getElementById("spaceFindertext");
 const ownerText = document.getElementById('spaceOwnertext')
 const finder = document.getElementById("spaceFinder");
@@ -89,6 +89,9 @@ function closePopup() {
 
 
 
-window.onload = (event) => {
+function myFunction(){
 
+    // Put all your code here
+    // And at the end run start() function
+    console.log("fadfad");
 }

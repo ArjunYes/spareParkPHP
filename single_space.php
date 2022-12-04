@@ -44,14 +44,15 @@
 
         <div class="space_image">
             <img src="images/10172815_8399 (1).jpg" alt="">
-            <button class="nav_btn nav_left">LEFT </button>
-            <button class="nav_btn nav_right">RIGHT</button>
+            <button class="nav_btn nav_left"><i class="fa-solid fa-arrow-left-long"></i> </button>
+            <button class="nav_btn nav_right"><i class="fa-solid fa-arrow-right-long"></i></button>
         </div>
         <div class="space_detail">
             <h1 class="space_title detail_margin">CRYSTAL AURAS</h1>
             <p class="detail_margin">Location : E138QR</p>
-            <p class="detail_margin gmaps"><i class="fa fa-thin fa-location-dot"></i> Check at gmaps  </p>
-            
+            <p onclick="window.location.href = 'https://www.google.com/maps/place/Covent+Garden,+London/@51.5121138,-0.1283617,16z/data=!3m1!4b1!4m5!3m4!1s0x487604cb878e81b3:0x91f10fa364452046!8m2!3d51.5116538!4d-0.1240468'"
+                class="detail_margin gmaps"><i class="fa fa-thin fa-location-dot"></i> Check at gmaps </p>
+
             <div class="detail_margin star">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -59,7 +60,9 @@
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
             </div>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus officia, incidunt quas voluptatibus velit, at aliquam magni modi possimus, optio maxime eum quisquam tempora explicabo tempore odit autem eveniet molestias?</p>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus officia, incidunt quas
+                voluptatibus velit, at aliquam magni modi possimus, optio maxime eum quisquam tempora explicabo tempore
+                odit autem eveniet molestias?</p>
             <button class="btn_new extra_pad">CHECK AVAILABILITY & BOOK SPACE</button>
         </div>
     </div>

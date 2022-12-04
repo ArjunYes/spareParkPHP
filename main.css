@@ -23,6 +23,15 @@ body {
   filter: blur(10px);
 }
 
+.link {
+  cursor: pointer;
+}
+.link:hover {
+  color: red;
+  cursor: pointer;
+  transition: ease-in-out all 0.2s;
+}
+
 .dialogue {
   width: 450px;
   position: absolute;
@@ -594,12 +603,13 @@ body {
   justify-content: center;
   padding: 20px;
 }
+.reg_form .reg_form_space_owner .btn {
+  padding: 10px 20px 10px 20px;
+}
 .reg_form .reg_form_space_owner input {
   border: 0.5px solid gray;
 }
 .reg_form .reg_form_space_owner > h2 {
+  text-align: center;
   margin: 20px;
-}
-.reg_form .btn {
-  padding: 20px;
 }/*# sourceMappingURL=main.css.map */

@@ -25,6 +25,16 @@ body {
     filter: blur(10px);
 }
 
+.link{
+    cursor: pointer;
+    &:hover {
+        // background-color: #6d6d6d;
+        color: red;
+        cursor: pointer;
+        transition: ease-in-out all .2s
+    }
+}
+
 .dialogue {
     width: 450px;
     // height: 20px;
@@ -739,23 +749,23 @@ body {
         justify-content: center;
         padding: 20px;
 
+        .btn{
+            padding: 10px 20px 10px 20px;
+        }
+
         input{
             border: 0.5px solid gray;
         }
     }
 
     .reg_form_space_owner > h2 {
-        // color: red;
+       
+        text-align: center;
         margin: 20px;
     }
+
+
  
 
-    .text_box{
-        
-    }
-
-    .btn{
-        padding: 20px;
-    }
 }
 

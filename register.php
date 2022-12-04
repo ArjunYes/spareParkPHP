@@ -1,7 +1,3 @@
-<?php
-include_once 'includes/dbh.inc.php'
-    ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +17,7 @@ include_once 'includes/dbh.inc.php'
 
 </head>
 
-<body onload="onLoad()" class="">
+<body onload="myFunction()">
 
 
 
@@ -45,52 +41,69 @@ include_once 'includes/dbh.inc.php'
 
 
     <div class="reg_form">
+
         <div class="user_groups">
             <button onclick="switchUser(event)" id="spaceFinder" value="spaceFinder" class="btn activeUser">SPACE
                 FINDER.</button>
             <button onclick="switchUser(event)" id="spaceOwner" value="spaceOwner" class="btn">SPACE OWNER.</button>
 
         </div>
-        <!-- <form class="reg_form_space_owner" action="">
+
+        <form class="reg_form_space_owner" action="" id="spaceOwnerForm">
             <h2 class="form_head">LOGIN AS <span id="spaceOwnertext">SPACE OWNER.</span> </h2>
             <input class="text_box" type="text" name="name" placeholder="First Name">
             <input class="text_box" type="text" name="name" placeholder="Last Name">
             <input class="text_box" type="text" name="name" placeholder="Email Id">
             <input class="text_box" type="text" name="name" placeholder="Phone Number">
             <input class="text_box" type="text" name="name" placeholder="Address">
-            <input class="btn" type="submit" value="REGISTER">
-        </form> -->
+            <input class="btn" type="submit" value="REGISTER AS OWNER">
+        </form>
 
-         <form class="reg_form_space_owner" action="">
-            <h2 class="form_head">LOGIN AS <span id="spaceOwnertext">SPACE FINDER.</span> </h2>
+        <form class="reg_form_space_owner" action="" id="spaceFinderForm">
+            <h2 class="form_head">LOGIN AS <span id="spaceFindertext">SPACE FINDER.</span> </h2>
             <input class="text_box" type="text" name="name" placeholder="First Name">
             <input class="text_box" type="text" name="name" placeholder="Last Name">
             <input class="text_box" type="text" name="name" placeholder="Email Id">
             <input class="text_box" type="text" name="name" placeholder="Phone Number">
             <input class="text_box" type="text" name="name" placeholder="Address">
-            <input class="btn" type="submit" value="REGISTER">
+            <input class="btn" type="submit" value="REGISTER AS FINDER">
         </form>
 
     </div>
 
 
 
-    <!-- 
-    <footer class="footer">
-        <p> &copy 2022-2023 All rigths reserved spare park. Version 1.0.0</p>
-    </footer> -->
-
-
 
 </body>
 
 </html>
+<script type="text/javascript">
+    var userType = "1";
+    const spaceOwnerForm = document.getElementById('spaceOwnerForm');
+    const spaceFinderForm = document.getElementById('spaceFinderForm');
+    function myFunction() {
+        spaceOwnerForm.style.display = "none";
+        spaceFinderForm.style.display = "block";
+        console.log("ONLOAD FUNCTION", finderTextreg);
+    }
 
+    function switchUser(e) {
+        e.preventDefault();
+        userType = e.target.value === "spaceOwner" ? 1 : 0
+        console.log("Swith user", e.target.value, userType);
 
-<script>
+        if (userType == 1) {
+            spaceOwnerForm.style.display = "block";
+            spaceFinderForm.style.display = "none";
+        } else {
+            spaceOwnerForm.style.display = "none";
+            spaceFinderForm.style.display = "block";
+        }
+    }
 
-
-    
 </script>
+
+
+
 
 <!-- <script src="index.js"></script> -->
