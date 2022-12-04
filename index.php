@@ -95,9 +95,9 @@ include_once 'includes/dbh.inc.php'
 
 
             <div id="spaces" class="spaces">
-                <h1>SPACES</h1>
+                <h1 class="heading">SPACES</h1>
                 <div class="spaceWrapper">
-                    
+
                     <div class="space">
                         <div class="imageWrapper">
                             <img src="images/user_images/pexels-photo-1004409.jpeg" alt="">
