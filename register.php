@@ -1,6 +1,6 @@
 <?php
 include_once 'includes/dbh.inc.php'
-?>
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,25 +46,28 @@ include_once 'includes/dbh.inc.php'
 
     <div class="reg_form">
         <div class="user_groups">
-            <button onclick="switchUser(event)" id="spaceFinder" value="spaceFinder" class="btn activeUser">SPACE FINDER.</button>
+            <button onclick="switchUser(event)" id="spaceFinder" value="spaceFinder" class="btn activeUser">SPACE
+                FINDER.</button>
             <button onclick="switchUser(event)" id="spaceOwner" value="spaceOwner" class="btn">SPACE OWNER.</button>
 
         </div>
-        <form class="reg_form_space_owner" action="">
-            <input  class="text_box"  type="text" name="name" placeholder="First Name">
-            <input  class="text_box"  type="text" name="name" placeholder="Last Name">
-            <input  class="text_box"  type="text" name="name" placeholder="Email Id">
-            <input  class="text_box"  type="text" name="name" placeholder="Phone Number">
-            <input  class="text_box"  type="text" name="name" placeholder="Address">
+        <!-- <form class="reg_form_space_owner" action="">
+            <h2 class="form_head">LOGIN AS <span id="spaceOwnertext">SPACE OWNER.</span> </h2>
+            <input class="text_box" type="text" name="name" placeholder="First Name">
+            <input class="text_box" type="text" name="name" placeholder="Last Name">
+            <input class="text_box" type="text" name="name" placeholder="Email Id">
+            <input class="text_box" type="text" name="name" placeholder="Phone Number">
+            <input class="text_box" type="text" name="name" placeholder="Address">
             <input class="btn" type="submit" value="REGISTER">
-        </form>
+        </form> -->
 
-        <form class="reg_form_space_finder" action="">
-            <input  class="text_box"  type="text" name="name" placeholder="First Name">
-            <input  class="text_box"  type="text" name="name" placeholder="Last Name">
-            <input  class="text_box"  type="text" name="name" placeholder="Email Id">
-            <input  class="text_box"  type="text" name="name" placeholder="Phone Number">
-            <input  class="text_box"  type="text" name="name" placeholder="Address">
+         <form class="reg_form_space_owner" action="">
+            <h2 class="form_head">LOGIN AS <span id="spaceOwnertext">SPACE FINDER.</span> </h2>
+            <input class="text_box" type="text" name="name" placeholder="First Name">
+            <input class="text_box" type="text" name="name" placeholder="Last Name">
+            <input class="text_box" type="text" name="name" placeholder="Email Id">
+            <input class="text_box" type="text" name="name" placeholder="Phone Number">
+            <input class="text_box" type="text" name="name" placeholder="Address">
             <input class="btn" type="submit" value="REGISTER">
         </form>
 
@@ -72,10 +75,10 @@ include_once 'includes/dbh.inc.php'
 
 
 
-
+    <!-- 
     <footer class="footer">
         <p> &copy 2022-2023 All rigths reserved spare park. Version 1.0.0</p>
-    </footer>
+    </footer> -->
 
 
 
@@ -84,4 +87,10 @@ include_once 'includes/dbh.inc.php'
 </html>
 
 
-<script src="index.js"></script>
+<script>
+
+
+    
+</script>
+
+<!-- <script src="index.js"></script> -->
