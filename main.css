@@ -25,11 +25,13 @@ body {
 
 .link {
   cursor: pointer;
+  color: white;
 }
 .link:hover {
   color: red;
   cursor: pointer;
   transition: ease-in-out all 0.2s;
+  margin: 20px;
 }
 
 .dialogue {
@@ -83,7 +85,7 @@ body {
 }
 
 .page_1 {
-  background-color: #F5f5f5;
+  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -272,6 +274,7 @@ body {
   color: #6d6d6d;
   margin-top: 15px;
   margin-bottom: 15px;
+  text-decoration: none;
 }
 .big-btn:hover {
   background-color: #6d6d6d;
@@ -334,7 +337,7 @@ body {
 }
 
 .contactus {
-  background-color: #F5f5f5;
+  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -404,7 +407,7 @@ body {
 }
 
 .active {
-  color: #CD5C5C;
+  color: #cd5c5c;
 }
 
 .user_groups {
@@ -428,29 +431,44 @@ body {
   transition: ease-in-out all 0.2s;
 }
 
+.spaces > * {
+  margin: 20px;
+}
+
 .spaces {
   background-color: #6d6d6d;
   width: 100%;
-  margin: auto;
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px;
 }
 .spaces .spaceWrapper {
-  margin: 40px;
-  gap: 15px;
-  width: 90%;
-  background-color: red;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.spaces .space > * {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: white;
 }
 .spaces .space {
-  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  margin: 5px;
+  border-radius: 8px;
+}
+.spaces .space .btn {
+  border: 1px solid white;
+  padding: 10px 30px;
+  margin: 20px;
+}
+.spaces .space .btn:hover {
+  background-color: red;
 }
 .spaces .imageWrapper {
   height: 300px;

@@ -1,6 +1,6 @@
 <?php
 include_once 'includes/dbh.inc.php'
-?>
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -53,22 +53,40 @@ include_once 'includes/dbh.inc.php'
                     <div class="title_desc">
                         <h1 class="title">WELCOME TO <span class="active">SPARE PARK.</span> </h1>
 
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum officia cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem perferendis officiis explicabo ipsam distinctio, facilis quos!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum
+                            officia cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem
+                            perferendis officiis explicabo ipsam distinctio, facilis quos!</p>
                         <a class="big-btn " href="#about"> EXPLORE SPACES <i class="fa-solid fa-arrow-down "></i></a>
                     </div>
 
                     <div class="form_container">
                         <form class="form" action="" method="post">
-                            <h2 class="form_head">LOGIN AS <span id="spaceFindertext">SPACE FINDER.</span> <span id="spaceOwnertext">SPACE OWNER.</span> </h2>
+                            <h2 class="form_head">LOGIN AS <span id="spaceFindertext">SPACE FINDER.</span> <span
+                                    id="spaceOwnertext">SPACE OWNER.</span> </h2>
+
                             <div class="user_groups">
-                                <button onclick="switchUser(event)" id="spaceFinder" value="spaceFinder" class="btn activeUser">SPACE FINDER.</button>
-                                <button onclick="switchUser(event)" id="spaceOwner" value="spaceOwner" class="btn">SPACE OWNER.</button>
+                                <button onclick="switchUser(event)" id="spaceFinder" value="spaceFinder"
+                                    class="btn activeUser">SPACE FINDER.</button>
+                                <button onclick="switchUser(event)" id="spaceOwner" value="spaceOwner" class="btn">SPACE
+                                    OWNER.</button>
 
                             </div>
-                            <input class="text_box" type="text" name="" placeholder="Username / email">
-                            <input class="text_box" type="text" placeholder="Password">
-                            <input class="btn full-width" type="submit" value="Login">
-                            <p>Dont have an account ? <span onclick="window.location.href = '/spareParkPHP/register.php'"> Register</span></p>
+
+                            <div id="spaceFinderForm">
+                                <input class="text_box" type="text" name="" placeholder="Username / email">
+                                <input class="text_box" type="text" placeholder="Password">
+                                <input class="btn full-width" type="submit" value="Login as sapce finder">
+                            </div>
+
+
+                            <div id="spaceOwnerForm">
+                                <input class="text_box" type="text" name="" placeholder="Username / email">
+                                <input class="text_box" type="text" placeholder="Password">
+                                <input class="btn full-width" type="submit" value="Login as space owner">
+                            </div>
+
+                            <p>Dont have an account ? <span
+                                    onclick="window.location.href = '/spareParkPHP/register.php'"> Register</span></p>
 
                         </form>
                     </div>
@@ -79,6 +97,7 @@ include_once 'includes/dbh.inc.php'
             <div id="spaces" class="spaces">
                 <h1>SPACES</h1>
                 <div class="spaceWrapper">
+                    
                     <div class="space">
                         <div class="imageWrapper">
                             <img src="images/user_images/pexels-photo-1004409.jpeg" alt="">
@@ -94,6 +113,7 @@ include_once 'includes/dbh.inc.php'
                         </div>
                         <button class="btn">EXPLORE</button>
                     </div>
+
                     <div class="space">
                         <div class="imageWrapper">
                             <img src="images/user_images/pexels-photo-1004409.jpeg" alt="">
@@ -147,8 +167,9 @@ include_once 'includes/dbh.inc.php'
                     </div>
 
                 </div>
-                <h2 class="link" onclick="window.location.href = '/spareParkPHP/spaces_listing.php'">MORE SPACES TO EXPLORE <i class="fa-solid fa-arrow-right-long"></i></h2>
-                
+                <h2 class="link" onclick="window.location.href = '/spareParkPHP/spaces_listing.php'">MORE SPACES TO
+                    EXPLORE <i class="fa-solid fa-arrow-right-long"></i></h2>
+
 
             </div>
         </div>
@@ -157,7 +178,9 @@ include_once 'includes/dbh.inc.php'
         <div id="about" class="about">
             <div class="title_desc">
                 <h1 class="title">TRAVEL AND PARK AT EASE.</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum officia cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem perferendis officiis explicabo ipsam distinctio, facilis quos!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum officia
+                    cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem perferendis
+                    officiis explicabo ipsam distinctio, facilis quos!</p>
             </div>
             <div class="image_container">
                 <img src="images/10172815_8399 (1).jpg" alt="">
@@ -171,17 +194,20 @@ include_once 'includes/dbh.inc.php'
                 <div class="platform">
                     <i class="small_logo fa fa-regular fa-mobile"></i>
                     <h2>Mobile</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente
+                        deleniti magni, nam eligendi incidunt placeat quae!</p>
                 </div>
                 <div class="platform">
                     <i class="small_logo fa fa-thin fa-tablet"></i>
                     <h2>Tablets</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente
+                        deleniti magni, nam eligendi incidunt placeat quae!</p>
                 </div>
                 <div class="platform">
                     <i class="small_logo fa  fa-regular fa-desktop"></i>
                     <h2>Desktop</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente deleniti magni, nam eligendi incidunt placeat quae!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente
+                        deleniti magni, nam eligendi incidunt placeat quae!</p>
                 </div>
             </div>
 
@@ -223,8 +249,9 @@ include_once 'includes/dbh.inc.php'
                     <form class="form" action="" method="post">
                         <h2 class="">MESSAGE US</h2>
                         <input class="text_box_c" type="email" name="email_id" placeholder="Email id">
-                        <textarea class="textArea" rows="4" cols="50" name="message" placeholder="Type in your msg"></textarea>
-                        <input  name="sendMsg" onclick="sendMessgae(event,true)" class="btn" type="submit" value="Send">
+                        <textarea class="textArea" rows="4" cols="50" name="message"
+                            placeholder="Type in your msg"></textarea>
+                        <input name="sendMsg" onclick="sendMessgae(event,true)" class="btn" type="submit" value="Send">
 
                     </form>
 
@@ -256,8 +283,8 @@ include_once 'includes/dbh.inc.php'
 
 
 
-if (isset($_POST['sendMsg'])) {    
-    
+if (isset($_POST['sendMsg'])) {
+
     echo " <script> debugger </script> ";
 }
 
