@@ -20,8 +20,6 @@
 <body onload="myFunction()">
 
 
-
-
     <nav class="navbar" id="navbar">
 
         <div onclick="navOpenClose(event)" class="logo ">
@@ -34,6 +32,9 @@
             <li><a href="#platforms">Platforms</a></li>
             <li><a href="#contactus">Contact Us </a></li>
         </ul>
+
+
+        This
 
         <i onclick="navOpenClose(event)" class="ham_burger fa fa-thin fa-bars"></i>
 

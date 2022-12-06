@@ -1,6 +1,3 @@
-<?php
-include_once 'includes/dbh.inc.php'
-    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,10 +32,11 @@ include_once 'includes/dbh.inc.php'
 
         <div class="wrapper">
             <div class="page_1">
-                <nav class="navbar">
+
+                <!-- <nav class="navbar">
                     <div class="logo ">
                         <img class="filter-green" src="images/big-parking-sign-svgrepo-com.svg" alt="">
-                        <!-- <h2 >Spare Park</h2> -->
+                       
                     </div>
                     <ul class="navitems">
                         <li><a class="
@@ -47,7 +45,12 @@ include_once 'includes/dbh.inc.php'
                         <li><a href="#platforms">Platforms</a></li>
                         <li><a href="#contactus">Contact Us </a></li>
                     </ul>
-                </nav>
+                </nav> -->
+
+
+                <?php
+                include 'navbar.php';
+                ?>
 
                 <div id="home" class="content_wrapper">
                     <div class="title_desc">
@@ -56,7 +59,7 @@ include_once 'includes/dbh.inc.php'
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum
                             officia cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem
                             perferendis officiis explicabo ipsam distinctio, facilis quos!</p>
-                        <a class="big-btn " href="#about"> EXPLORE SPACES <i class="fa-solid fa-arrow-down "></i></a>
+                        <a class="big-btn " href="#spaces"> EXPLORE SPACES <i class="fa-solid fa-arrow-down "></i></a>
                     </div>
 
                     <div class="form_container">
