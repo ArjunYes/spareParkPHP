@@ -40,15 +40,16 @@
     *{
         color: black;
     } */
-    
+
     .navbaree {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 18px;
-        /* background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%); */
-        /* border: 1px solid rgba(0, 0, 0, 0.2); */
         width: 85%;
         padding-bottom: 10px;
         color: black;
-        /* border: px solid black; */
+        border: 1px solid black;
     }
 
     .main-nav {
@@ -59,11 +60,9 @@
     .nav-links,
     .logoxx {
         text-decoration: none;
-        /* color: rgba(255, 255, 255, 0.7); */
         color: #6d6d6d;
-        /* font-weight: bold; */
     }
-    
+
 
     .main-nav li {
         text-align: center;
@@ -80,7 +79,7 @@
     .filter-green {
         height: 55px;
         width: 50px;
-        margin : 20px;
+        margin: 20px;
     }
 
     .navbar-toggle {
@@ -88,9 +87,7 @@
         top: 38px;
         right: 20px;
         cursor: pointer;
-        /* color: rgba(255, 255, 255, 0.8);
-         */
-         color: black;
+        color: black;
         font-size: 24px;
     }
 
@@ -104,17 +101,20 @@
 
     @media screen and (min-width: 768px) {
         .navbaree {
+            width: 100%;
             display: flex;
-            justify-content: space-between;
-            padding-bottom: 0;
-            height: 70px;
             align-items: center;
+            justify-content: space-around;
+          
+            height: 100px;
+            align-items: center;
+            border:none;
         }
 
         .filter-green {
             height: 50px;
             width: 50px;
-            margin : 20px;
+            margin: 20px;
         }
 
         #chkToggle:checked+ul.main-nav {

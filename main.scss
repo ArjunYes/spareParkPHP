@@ -772,6 +772,10 @@ body {
     }
 }
 
+.register{
+    background-color: #f5f5f5;
+}
+
 .reg_form {
     // background-color: red;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -782,13 +786,31 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
+
+    .user_groups {
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+
+        .btn {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+    }
 
     .reg_form_space_owner {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 20px;
+        padding: 50px;
 
         .btn {
             padding: 10px 20px 10px 20px;
@@ -901,25 +923,25 @@ body {
     }
 }
 
-.owner_dashboard{
+.owner_dashboard {
     // background-color: green;
     // border: 1px solid red;
     width: 80%;
     margin: auto;
     height: 90vh;
-    display:  flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.tiles{
+.tiles {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.tile{
+.tile {
     border-radius: 8px;
     min-height: 500px;
     min-width: 300px;
@@ -932,5 +954,4 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }

@@ -673,6 +673,10 @@ body {
   margin-bottom: 25px;
 }
 
+.register {
+  background-color: #f5f5f5;
+}
+
 .reg_form {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 50%;
@@ -681,13 +685,28 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
+}
+.reg_form .user_groups {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.reg_form .user_groups .btn {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
 }
 .reg_form .reg_form_space_owner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 50px;
 }
 .reg_form .reg_form_space_owner .btn {
   padding: 10px 20px 10px 20px;

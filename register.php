@@ -17,28 +17,12 @@
 
 </head>
 
-<body onload="myFunction()">
+<body class="register" onload="myFunction()">
 
 
-    <nav class="navbar" id="navbar">
-
-        <div onclick="navOpenClose(event)" class="logo ">
-            <img class="filter-green" src="images/big-parking-sign-svgrepo-com.svg" alt="">
-        </div>
-
-        <ul class="navitems" id="navitems">
-            <li><a class="" href="#home">Home </a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#platforms">Platforms</a></li>
-            <li><a href="#contactus">Contact Us </a></li>
-        </ul>
-
-
-        This
-
-        <i onclick="navOpenClose(event)" class="ham_burger fa fa-thin fa-bars"></i>
-
-    </nav>
+    <?php
+    include 'navbar.php';
+    ?>
 
 
     <div class="reg_form">
@@ -51,7 +35,7 @@
         </div>
 
         <form class="reg_form_space_owner" action="" id="spaceOwnerForm">
-            <h2 class="form_head">LOGIN AS <span id="spaceOwnertext">SPACE OWNER.</span> </h2>
+            <h2 class="form_head">REGISTER AS <span id="spaceOwnertext">SPACE OWNER.</span> </h2>
             <input class="text_box" type="text" name="name" placeholder="First Name">
             <input class="text_box" type="text" name="name" placeholder="Last Name">
             <input class="text_box" type="text" name="name" placeholder="Email Id">
@@ -61,7 +45,7 @@
         </form>
 
         <form class="reg_form_space_owner" action="" id="spaceFinderForm">
-            <h2 class="form_head">LOGIN AS <span id="spaceFindertext">SPACE FINDER.</span> </h2>
+            <h2 class="form_head">REGSTER AS <span id="spaceFindertext">SPACE FINDER.</span> </h2>
             <input class="text_box" type="text" name="name" placeholder="First Name">
             <input class="text_box" type="text" name="name" placeholder="Last Name">
             <input class="text_box" type="text" name="name" placeholder="Email Id">
