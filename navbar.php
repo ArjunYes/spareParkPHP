@@ -105,10 +105,10 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-          
+
             height: 100px;
             align-items: center;
-            border:none;
+            border: none;
         }
 
         .filter-green {

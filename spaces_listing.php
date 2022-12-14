@@ -1,5 +1,30 @@
 <style>
 
+.form{
+    width: 100%;
+}
+
+.header{
+    margin: 30px;
+}
+
+.inp_box{
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border : 1px solid gray;
+    border-radius: 10px;
+}
+
+.btn{
+    padding: 30px;
+    width: 100%;
+    margin-top: 20px;
+    border : 1px solid gray;
+    border-radius: 10px;
+}
+
+
 </style>
 
 <!DOCTYPE html>
@@ -23,25 +48,21 @@
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo ">
-            <img class="filter-green" src="images/big-parking-sign-svgrepo-com.svg" alt="">
-        </div>
-        <ul class="navitems">
-            <li><a class="" href="#home">Home </a></li>
-            <li><a class="" href="#home">Spaces </a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#platforms">Platforms</a></li>
-            <li><a href="#contactus">Contact Us </a></li>
-        </ul>
-    </nav>
-
+    <?php
+    include 'navbar.php';
+    ?>
 
     <div class="width_wrapper">
 
+
         <center>
-            <h1 class="heading">EXPLORE ALL SPACES.</h1>
+            <h1 class="header">EXPLORE ALL SPACES.</h1>
+            <form action="" class="form">
+                <input class="inp_box" placeholder="Search" type="text" name="">
+                <input class="btn" type="submit" value="Search" name="" id="">
+            </form>
         </center>
+
 
         <div class="space_listing">
 
@@ -62,7 +83,8 @@
                     <i class="fa-regular fa-star"></i>
                 </div>
                 <p class="detail_margin">Price :11$/ph</p>
-                <button onclick="window.location.href = '/spareParkPHP/single_space.php'" class=" detail_margin btn_new">VIEW DETIALS</button>
+                <button onclick="window.location.href = '/spareParkPHP/single_space.php'"
+                    class=" detail_margin btn_new">VIEW DETIALS</button>
 
             </div>
 
@@ -99,7 +121,8 @@
                     <i class="fa-regular fa-star"></i>
                 </div>
                 <p class="detail_margin">Price :11$/ph</p>
-                <button onclick="window.location.href = '/spareParkPHP/spaces_listing.php'" class=" detail_margin btn_new">VIEW DETIALS</button>
+                <button onclick="window.location.href = '/spareParkPHP/spaces_listing.php'"
+                    class=" detail_margin btn_new">VIEW DETIALS</button>
             </div>
 
             <div class="single_space">
@@ -256,13 +279,4 @@
 
 </html>
 
-
 <script src="index.js"></script>
-
-
-<?php
-
-
-
-
-?>
