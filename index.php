@@ -33,19 +33,7 @@
         <div class="wrapper">
             <div class="page_1">
 
-                <!-- <nav class="navbar">
-                    <div class="logo ">
-                        <img class="filter-green" src="images/big-parking-sign-svgrepo-com.svg" alt="">
-                       
-                    </div>
-                    <ul class="navitems">
-                        <li><a class="
-                    " href="#home">Home </a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#platforms">Platforms</a></li>
-                        <li><a href="#contactus">Contact Us </a></li>
-                    </ul>
-                </nav> -->
+
 
 
                 <?php
@@ -90,6 +78,8 @@
 
                             <p>Dont have an account ? <span
                                     onclick="window.location.href = '/spareParkPHP/register.php'"> Register</span></p>
+                            <p>Click here to read about our <span class="privacy_policy"
+                                    onclick="window.location.href = '/spareParkPHP/privacy_policy.php'"> Privacy policy. </span></p>
 
                         </form>
                     </div>
