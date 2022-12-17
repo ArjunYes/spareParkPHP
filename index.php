@@ -34,8 +34,6 @@
             <div class="page_1">
 
 
-
-
                 <?php
                 include 'navbar.php';
                 ?>

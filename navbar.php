@@ -49,7 +49,7 @@
         width: 85%;
         padding-bottom: 10px;
         color: black;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
 
     .main-nav {
