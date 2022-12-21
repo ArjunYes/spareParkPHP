@@ -17,32 +17,42 @@
 
 </head>
 
-<body class="">
+<body class="register" >
+
 
     <?php
     include 'navbar.php';
     ?>
 
-  
+
+    <div class="reg_form">
+
+       
+
+        <form class="reg_form_space_owner" action="" >
+            <h2 class="form_head">ADD A  <span id="spaceFindertext">NEW SPACE.</span> </h2>
+            <p class="margin">Please fill in the detials for the new space</p>
+            <input class="text_box" type="text" name="name" placeholder="First Name">
+            <input class="text_box" type="text" name="name" placeholder="Last Name">
+            <input class="text_box" type="text" name="name" placeholder="Email Id">
+            <input class="text_box" type="text" name="name" placeholder="Phone Number">
+            <input class="text_box" type="text" name="name" placeholder="Address">
+            <input class="btn" type="submit" value="REGISTER AS FINDER">
+        </form>
 
     </div>
+
+
 
 
 </body>
 
 </html>
+<script type="text/javascript">
+    
+</script>
 
 
 
 
-<?php
-
-
-
-if (isset($_POST['sendMsg'])) {
-
-    echo " <script> debugger </script> ";
-}
-
-
-?>
+<!-- <script src="index.js"></script> -->
