@@ -55,9 +55,9 @@
                 <input class="text_box" type="text" name="name" placeholder="Last Name">
                 <input class="text_box" type="text" name="name" placeholder="Email Id">
                 <input class="text_box" type="text" name="name" placeholder="Phone Number">
-                <input class="text_box" type="text" name="name" placeholder="Address">
+                <!-- <input class="text_box" type="text" name="name" placeholder="Address"> -->
             </div>
-
+            ADDRESS
             <div class="address">
                 <input class="text_box" type="street" class="form-control" id="autocomplete" placeholder="Street">
                 <input class="text_box" type="city" class="form-control" id="inputCity" placeholder="City">

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,9 +32,22 @@
         <div class="wrapper">
             <div class="page_1">
 
-
                 <?php
-                include 'navbar.php';
+                    include 'navbar.php';
+
+                    if (session_status() == PHP_SESSION_NONE) {
+                        session_start();
+                    }
+
+                    if (isset($_SESSION["USER_ID"])) {
+                        if (isset($_SESSION["userType"])) {
+                            session_destroy();
+                        }
+                        if (isset($_SESSION["USER_ID"])) {
+                            session_destroy();
+                        }
+                        // session_destroy();
+                    }
                 ?>
 
                 <div id="home" class="content_wrapper">
@@ -62,22 +74,25 @@
                             </div>
 
                             <div id="spaceFinderForm">
-                                <input class="text_box" type="text" name="" placeholder="Username / email">
-                                <input class="text_box" type="text" placeholder="Password">
-                                <input class="btn full-width" type="submit" value="Login as sapce finder">
+                                <input class="text_box" type="text" name="sf_email" placeholder="Username / email">
+                                <input class="text_box" type="text" name="sf_password" placeholder="Password">
+                                <input class="btn full-width" type="submit" name="sf_login"
+                                    value="Login as sapce finder">
                             </div>
 
 
                             <div id="spaceOwnerForm">
-                                <input class="text_box" type="text" name="" placeholder="Username / email">
-                                <input class="text_box" type="text" placeholder="Password">
-                                <input class="btn full-width" type="submit" value="Login as space owner">
+                                <input class="text_box" type="text" name="so_email" placeholder="Username / email">
+                                <input class="text_box" type="text" name="so_password" placeholder="Password">
+                                <input class="btn full-width" type="submit" name="so_login"
+                                    value="Login as space owner">
                             </div>
 
                             <p>Dont have an account ? <span
                                     onclick="window.location.href = '/spareParkPHP/register.php'"> Register</span></p>
                             <p>Click here to read about our <span class="privacy_policy"
-                                    onclick="window.location.href = '/spareParkPHP/privacy_policy.php'"> Privacy policy. </span></p>
+                                    onclick="window.location.href = '/spareParkPHP/privacy_policy.php'"> Privacy policy.
+                                </span></p>
 
                         </form>
                     </div>

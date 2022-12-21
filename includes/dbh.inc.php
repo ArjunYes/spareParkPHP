@@ -1,9 +1,9 @@
 <?php
 
     $username="root";
-    $password="1234";
+    $password="";
     $host="localhost";
-    $db="worldmoviesdb";
+    $db="sparepark";
     $charset= "utf8mb4";
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
