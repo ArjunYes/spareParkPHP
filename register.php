@@ -1,3 +1,17 @@
+<?php
+      if (session_status() == PHP_SESSION_NONE) {
+        // echo "console.log('Session start')";
+        session_start();
+        // $_SESSION["so_id"] = 1;
+        // $_SESSION["user_type"] = "space_owner";
+    }
+
+    if (isset($_SESSION["so_id"])) {
+        echo "console.log('Session so_id')";
+        // session_destroy();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,15 +33,7 @@
     <?php
     include 'navbar.php';
 
-    if (session_status() == PHP_SESSION_NONE) {
-        // echo "console.log('Session start')";
-        session_start();
-    }
-
-    if (isset($_SESSION["USER_ID"])) {
-        // echo "console.log('Session Destory')";
-        session_destroy();
-    }
+  
     ?>
 
     <div class="reg_form">

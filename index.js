@@ -73,6 +73,10 @@ function sendMessgae(event, flag) {
   }
 }
 
+function preventDefault(event){
+  event.preventDefault();
+}
+
 function closePopup() {
   console.log("Close popup");
   body_content.classList.remove("blur");

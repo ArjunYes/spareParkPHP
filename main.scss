@@ -1002,3 +1002,22 @@ body {
     cursor: pointer;
     border-radius: 8px;
 }
+
+
+.logout{
+    // background-color: gray;
+    padding: 20px 40px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: #6d6d6d;
+        color: white;
+        cursor: pointer;
+        transition: ease-in-out all 0.2s;
+        // margin: 20px;
+    }
+}

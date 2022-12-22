@@ -1,3 +1,27 @@
+<?php
+
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+    if (isset($_SESSION["user_type"])) {
+        if ($_SESSION["user_type"] === 'sf_login') {
+            echo $_SESSION["user_type"];
+            echo $_SESSION["user_type"];
+            echo $_SESSION["last_name"];
+            echo $_SESSION["first_name"];
+            
+            echo "<script>  window.location.href = 'space_finder_home.php' </script>";
+        } else if ($_SESSION["user_type"] === 'so_login') {
+            echo "<script>  window.location.href = 'space_owner_home.php' </script>";
+        }
+
+        // session_destroy();
+    }
+
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,21 +57,7 @@
             <div class="page_1">
 
                 <?php
-                    include 'navbar.php';
-
-                    if (session_status() == PHP_SESSION_NONE) {
-                        session_start();
-                    }
-
-                    if (isset($_SESSION["USER_ID"])) {
-                        if (isset($_SESSION["userType"])) {
-                            session_destroy();
-                        }
-                        if (isset($_SESSION["USER_ID"])) {
-                            session_destroy();
-                        }
-                        // session_destroy();
-                    }
+                include 'navbar.php';
                 ?>
 
                 <div id="home" class="content_wrapper">
@@ -61,7 +71,7 @@
                     </div>
 
                     <div class="form_container">
-                        <form class="form" action="" method="post">
+                        <form class="form" action="" method="POST" role="form">
                             <h2 class="form_head">LOGIN AS <span id="spaceFindertext">SPACE FINDER.</span> <span
                                     id="spaceOwnertext">SPACE OWNER.</span> </h2>
 
@@ -74,8 +84,9 @@
                             </div>
 
                             <div id="spaceFinderForm">
-                                <input class="text_box" type="text" name="sf_email" placeholder="Username / email">
-                                <input class="text_box" type="text" name="sf_password" placeholder="Password">
+                                <input required class="text_box" type="text" name="sf_email"
+                                    placeholder="Username / email">
+                                <input required class="text_box" type="password" name="sf_password" placeholder="Password">
                                 <input class="btn full-width" type="submit" name="sf_login"
                                     value="Login as sapce finder">
                             </div>
@@ -83,10 +94,86 @@
 
                             <div id="spaceOwnerForm">
                                 <input class="text_box" type="text" name="so_email" placeholder="Username / email">
-                                <input class="text_box" type="text" name="so_password" placeholder="Password">
+                                <input class="text_box" type="password" name="so_password" placeholder="Password">
                                 <input class="btn full-width" type="submit" name="so_login"
                                     value="Login as space owner">
                             </div>
+
+
+
+                            <?php
+
+                            include_once 'includes/dbh.inc.php';
+
+                            if (isset($_POST['sf_login'])) {
+
+                                $sf_email = $_POST['sf_email'];
+                                $sf_password = $_POST['sf_password'];
+
+                                $sql = "select * from spaceowner where so_id ='$sf_email' and password='$sf_password'";
+                                $result = mysqli_query($conn, $sql);
+                            
+                                if (mysqli_num_rows($result) > 0) {
+                                    session_start();
+
+                                    while ($row = mysqli_fetch_assoc($result)) {
+
+                                        $first_name = $row['first_name'];
+                                        $last_name = $row['last_name'];
+                                        $_SESSION['first_name'] = $first_name;
+                                        $_SESSION['last_name'] = "$last_name";
+
+        
+                                    }
+
+
+                                    $_SESSION['login'] = true;
+                                    $_SESSION['user_type'] = "sf_login";
+
+
+                                    echo "<script>  window.location.href = 'space_finder_home.php' </script>";
+                                } else {
+                                    print "<p> <span>Wrong username or password</span></p>";
+                                }
+                            }
+
+
+
+                            if (isset($_POST['so_login'])) {
+
+                                $sf_email = $_POST['so_email'];
+                                $sf_password = $_POST['so_password'];
+
+                                $sql = "select * from spaceowner where so_id ='$sf_email' and password='$sf_password'";
+                                $result = mysqli_query($conn, $sql);
+                            
+                                if (mysqli_num_rows($result) > 0) {
+                                    session_start();
+
+                                    while ($row = mysqli_fetch_assoc($result)) {
+
+                                        $first_name = $row['first_name'];
+                                        $last_name = $row['last_name'];
+                                        $_SESSION['first_name'] = $first_name;
+                                        $_SESSION['last_name'] = "$last_name";
+
+        
+                                    }
+
+                                    $_SESSION['login'] = true;
+                                    $_SESSION['user_type'] = "so_login";
+
+
+                                    echo "<script>  window.location.href = 'space_owner_home.php' </script>";
+                                } else {
+                                    print "<p> <span>Wrong username or password</span></p>";
+                                }
+
+
+                            }
+                            ?>
+
+
 
                             <p>Dont have an account ? <span
                                     onclick="window.location.href = '/spareParkPHP/register.php'"> Register</span></p>
@@ -285,12 +372,12 @@
 <script src="index.js"></script>
 
 
+
 <?php
 
 
 
 if (isset($_POST['sendMsg'])) {
-
     echo " <script> debugger </script> ";
 }
 

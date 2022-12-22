@@ -1,3 +1,6 @@
+<?php
+include 'includes/check_session_sf.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,10 +22,9 @@
     include 'navbar.php';
     ?>
 
-
     <div class="owner_dashboard">
         <h1>
-            OWNER DASHBOARD
+            SPACE FINDER DASHBOARD
         </h1>
         <div class="tiles">
             <div class="tile">
@@ -32,7 +34,7 @@
                 POST A NEW SPACE
             </div>
             <div class="tile">
-                
+
             </div>
         </div>
     </div>

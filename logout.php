@@ -2,5 +2,5 @@
   session_start();
   session_unset();
   session_destroy();
-  header("Location: /worldmovies/loginregister.php?logout=success");
+  header("Location: /spareparkPhp/index.php?logout=success");
 ?>

@@ -28,6 +28,26 @@
             <li>
                 <a href="#" class="nav-links">Blog</a>
             </li>
+
+            <?php
+            if (session_status() == PHP_SESSION_NONE) {
+                session_start();
+            }
+
+            if (isset($_SESSION["user_type"])) {
+                $first_name = $_SESSION["first_name"];
+                $last_name = $_SESSION["last_name"];
+                echo " <li>
+                <a onclick=\"window.location.href='logout.php'\" class='nav-links logout'>Welcome  $first_name $last_name, Logout ?   </a>
+            </li>";
+
+            // echo "<a >ds</a>";
+            }
+            ?>
+            <!-- <li>
+                <a onclick="window.location.href='logout.php'" class="nav-links logout">Welcome <?php echo $first_name, ' ', $last_name, ' Logout ?' ?> </a>
+            </li> -->
+
         </ul>
     </div>
 </body>
@@ -36,11 +56,6 @@
 
 
 <style>
-    /* 
-    *{
-        color: black;
-    } */
-
     .navbaree {
         display: flex;
         align-items: center;
