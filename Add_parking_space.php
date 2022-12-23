@@ -20,34 +20,36 @@
 <body class="register">
 
 
-    <?php
-    include 'navbar.php';
-    ?>
+
 
 
     <div class="reg_form">
 
 
 
-        <form class="reg_form_space_owner" action="">
+        <form class="reg_form_space_owner" enctype="multipart/form-data" method="POST">
             <h2 class="form_head">ADD A <span id="spaceFindertext">NEW SPACE.</span> </h2>
             <p class="margin">Please fill in the detials for the new space</p>
-            <input class="text_box" type="text" name="name" placeholder="Space Name">
-            <input class="text_box" type="number" name="name" placeholder="Price per hour">
-            <input class="text_box" type="image" name="name" placeholder="Phone Number">
+            <input class="text_box" type="text" name="space_name" placeholder="Space Name">
+            <input class="text_box" type="number" name="per_hour" placeholder="Price per hour">
+            <!-- <input class="text_box" type="image" name="space_contact" placeholder="Phone Number"> -->
+
+            <input class="text_box" type="file" name="image">
 
             <div class="address">
-                <input class="text_box" name="so_street" type="street" class="form-control" placeholder="Street">
-                <input class="text_box" name="so_city" type="city" class="form-control" placeholder="City">
-                <input class="text_box" name="so_state" type="state" class="form-control" placeholder="State">
-                <input class="text_box" name="so_zip" type="zip" class="form-control" placeholder="Zip">
-                <input class="text_box" name="so_country" type="country" class="form-control" placeholder="Country">
-                <input class="text_box" name="so_country" type="country" class="form-control" placeholder="Gmap Link">
+                <input class="text_box" name="street" type="street" class="form-control" placeholder="Street">
+                <input class="text_box" name="city" type="city" class="form-control" placeholder="City">
+                <input class="text_box" name="state" type="state" class="form-control" placeholder="State">
+                <input class="text_box" name="zip" type="zip" class="form-control" placeholder="Zip">
+                <input class="text_box" name="country" type="country" class="form-control" placeholder="Country">
+                <input class="text_box" name="country" type="country" class="form-control" placeholder="Gmap Link">
             </div>
 
 
-            <input class="btn" type="submit" value="ADD NEW SPACE">
+            <input class="btn" type="submit" name="upload" value="ADD NEW SPACE">
         </form>
+
+
 
     </div>
 
@@ -60,7 +62,47 @@
 <script type="text/javascript">
 
 </script>
+<?php
 
+
+// Create database connection
+$db = mysqli_connect("localhost", "root", "", "sparepark");
+
+// Initialize message variable
+$msg = "";
+
+// If upload button is clicked ...
+if (isset($_POST['upload'])) {
+    // Get image name
+    $image = $_FILES['image']['name'];
+    // Get text
+  
+
+    // image file directory
+    $target = "uploads/" . basename($image);
+    $space_name = $_POST['space_name'];
+    $per_hour = $_POST['per_hour'];
+
+
+    $street = $_POST['street'];
+    $city = $_POST['city'];
+    $state = $_POST['state'];
+    $zip = $_POST['zip'];
+    $country = $_POST['country'];
+
+    $sql = "INSERT INTO space (image, `space_name`,`per_hour`,`street`,`city`,`state`,`zip`,`country`) 
+                       VALUES ('$image', '$space_name','$per_hour','$street','$city','$state','$zip','$country')";
+    // execute query
+    mysqli_query($db, $sql);
+
+    if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+        $msg = "Image uploaded successfully";
+    } else {
+        $msg = "Failed to upload image";
+    }
+}
+$result = mysqli_query($db, "SELECT * FROM space");
+?>
 
 
 

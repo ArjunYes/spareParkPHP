@@ -102,7 +102,7 @@ if (isset($_SESSION["so_id"])) {
                     $message = "Successfully registerd, now please login with credentials";
                     echo "<script> alert('$message'); window.location.href = 'index.php' </script>";
                 } else {
-                    $message = "Sfasdddddddddddddddd";
+                    $message = "Error";
                     echo "<script> alert('$message'); </script>";
                     echo "Error inserting";
                 }
