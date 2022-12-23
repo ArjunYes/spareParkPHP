@@ -17,7 +17,7 @@
 
 </head>
 
-<body class="register" >
+<body class="register">
 
 
     <?php
@@ -27,17 +27,26 @@
 
     <div class="reg_form">
 
-       
 
-        <form class="reg_form_space_owner" action="" >
-            <h2 class="form_head">ADD A  <span id="spaceFindertext">NEW SPACE.</span> </h2>
+
+        <form class="reg_form_space_owner" action="">
+            <h2 class="form_head">ADD A <span id="spaceFindertext">NEW SPACE.</span> </h2>
             <p class="margin">Please fill in the detials for the new space</p>
-            <input class="text_box" type="text" name="name" placeholder="First Name">
-            <input class="text_box" type="text" name="name" placeholder="Last Name">
-            <input class="text_box" type="text" name="name" placeholder="Email Id">
-            <input class="text_box" type="text" name="name" placeholder="Phone Number">
-            <input class="text_box" type="text" name="name" placeholder="Address">
-            <input class="btn" type="submit" value="REGISTER AS FINDER">
+            <input class="text_box" type="text" name="name" placeholder="Space Name">
+            <input class="text_box" type="number" name="name" placeholder="Price per hour">
+            <input class="text_box" type="image" name="name" placeholder="Phone Number">
+
+            <div class="address">
+                <input class="text_box" name="so_street" type="street" class="form-control" placeholder="Street">
+                <input class="text_box" name="so_city" type="city" class="form-control" placeholder="City">
+                <input class="text_box" name="so_state" type="state" class="form-control" placeholder="State">
+                <input class="text_box" name="so_zip" type="zip" class="form-control" placeholder="Zip">
+                <input class="text_box" name="so_country" type="country" class="form-control" placeholder="Country">
+                <input class="text_box" name="so_country" type="country" class="form-control" placeholder="Gmap Link">
+            </div>
+
+
+            <input class="btn" type="submit" value="ADD NEW SPACE">
         </form>
 
     </div>
@@ -49,7 +58,7 @@
 
 </html>
 <script type="text/javascript">
-    
+
 </script>
 
 

@@ -85,7 +85,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
                             <div id="spaceFinderForm">
                                 <input required class="text_box" type="text" name="sf_email"
-                                    placeholder="Username / email">
+                                    placeholder="Email id">
                                 <input required class="text_box" type="password" name="sf_password" placeholder="Password">
                                 <input class="btn full-width" type="submit" name="sf_login"
                                     value="Login as sapce finder">
@@ -93,7 +93,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 
                             <div id="spaceOwnerForm">
-                                <input class="text_box" type="text" name="so_email" placeholder="Username / email">
+                                <input class="text_box" type="text" name="so_email" placeholder="Email id">
                                 <input class="text_box" type="password" name="so_password" placeholder="Password">
                                 <input class="btn full-width" type="submit" name="so_login"
                                     value="Login as space owner">
@@ -110,7 +110,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                 $sf_email = $_POST['sf_email'];
                                 $sf_password = $_POST['sf_password'];
 
-                                $sql = "select * from spaceowner where so_id ='$sf_email' and password='$sf_password'";
+                                $sql = "select * from spacefinder where email_id ='$sf_email' and password='$sf_password'";
                                 $result = mysqli_query($conn, $sql);
                             
                                 if (mysqli_num_rows($result) > 0) {
@@ -144,7 +144,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                 $sf_email = $_POST['so_email'];
                                 $sf_password = $_POST['so_password'];
 
-                                $sql = "select * from spaceowner where so_id ='$sf_email' and password='$sf_password'";
+                                $sql = "select * from spaceowner where email_id ='$sf_email' and password='$sf_password'";
                                 $result = mysqli_query($conn, $sql);
                             
                                 if (mysqli_num_rows($result) > 0) {
