@@ -23,21 +23,10 @@
 
 <body>
 
-    <nav class="navbar">
+    <?php
+include 'navbar.php';
+?>
 
-        <div class="logo ">
-            <img class="filter-green" src="images/big-parking-sign-svgrepo-com.svg" alt="">
-        </div>
-
-        <ul class="navitems" id="navitems">
-            <li><a class="" href="index.php/#home">Home </a></li>
-            <li><a class="" href="#home">Spaces </a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#platforms">Platforms</a></li>
-            <li><a href="#contactus">Contact Us </a></li>
-        </ul>
-
-    </nav>
 
 
     <div class="space_info">

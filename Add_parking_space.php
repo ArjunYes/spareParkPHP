@@ -42,7 +42,7 @@
                 <input class="text_box" name="state" type="state" class="form-control" placeholder="State">
                 <input class="text_box" name="zip" type="zip" class="form-control" placeholder="Zip">
                 <input class="text_box" name="country" type="country" class="form-control" placeholder="Country">
-                <input class="text_box" name="country" type="country" class="form-control" placeholder="Gmap Link">
+                <input class="text_box" name="gmap_link" class="form-control" placeholder="Gmap Link">
             </div>
 
 
@@ -89,10 +89,15 @@ if (isset($_POST['upload'])) {
     $state = $_POST['state'];
     $zip = $_POST['zip'];
     $country = $_POST['country'];
+    $gmap_link = $_POST['gmap_link'];
 
-    $sql = "INSERT INTO space (image, `space_name`,`per_hour`,`street`,`city`,`state`,`zip`,`country`) 
-                       VALUES ('$image', '$space_name','$per_hour','$street','$city','$state','$zip','$country')";
-    // execute query
+    // $sql = "INSERT INTO space (image, `space_name`,`per_hour`,`street`,`city`,`state`,`zip`,`country`,`gmap_link`) 
+    //                    VALUES ('$image', '$space_name','$per_hour','$street','$city','$state','$zip','$country',$gmap_link)";
+    // // execute query
+
+    $sql = "INSERT INTO `space` (`space_name`, `per_hour`, `image`, `street`, `city`, `state`, `zip`, `country`, `gmap_link`, `so_id`) VALUES ('one', '12', 'rhreee', 'four', 'five', 'six', 'sev', 'eight', 'nine', '10')"
+
+
     mysqli_query($db, $sql);
 
     if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
