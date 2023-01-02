@@ -835,6 +835,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+.tile:hover {
+  background-color: #6d6d6d;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out all 0.2s;
+}
 
 .priv_policy {
   display: flex;

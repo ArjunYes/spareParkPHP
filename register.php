@@ -87,7 +87,7 @@ if (isset($_SESSION["so_id"])) {
 
 
 
-                $sql2 = "insert into `spacefinder` (`first_name`, `last_name`, `email_id`, `password`, `phone_number`, `street`, `state`, `city`, `zip`, `country`) 
+                $sql2 = "insert into `spaceowner` (`first_name`, `last_name`, `email_id`, `password`, `phone_number`, `street`, `state`, `city`, `zip`, `country`) 
                 VALUES ('$so_fisrt_name', '$so_last_name', '$so_email', '$so_password', '$so_number', '$so_street', '$so_city', '$so_state', ' $so_zip', '$so_country')";
 
 
@@ -159,7 +159,7 @@ if (isset($_SESSION["so_id"])) {
                 $sf_country = $_POST['sf_country'];
 
 
-                $sql = "insert into `spaceowner` (`first_name`, `last_name`, `email_id`, `password`, `phone_number`, `street`, `state`, `city`, `zip`, `country`) 
+                $sql = "insert into `spacefinder` (`first_name`, `last_name`, `email_id`, `password`, `phone_number`, `street`, `state`, `city`, `zip`, `country`) 
                 VALUES ('$sf_fisrt_name', '$sf_last_name', '$sf_email', '$sf_password', '$sf_number', '$sf_street', '$sf_city', '$sf_state', ' $sf_zip', '$sf_country')";
 
 

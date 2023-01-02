@@ -29,17 +29,19 @@ include 'includes/check_session_so.php';
             OWNER DASHBOARD
         </h1>
         <div class="tiles">
-            <div class="tile">
+            <div onclick="window.location.href = '/spareParkPHP/register.php'" class="tile hover">
                 VIEW ALL OWNED SPACES
             </div>
-            <div class="tile">
+            <div onclick="window.location.href = '/spareParkPHP/Add_parking_space.php'" class="tile hover">
                 POST A NEW SPACE
             </div>
-            <div class="tile">
-                
+            <div onclick="window.location.href = '/spareParkPHP/register.php'" class="tile hover ">
+                <p> VIEW ALL SPACES </p>
             </div>
         </div>
     </div>
 
 
 </head>
+
+middlesbrough

@@ -957,6 +957,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &:hover {
+        background-color: #6d6d6d;
+        color: white;
+        cursor: pointer;
+        transition: ease-in-out all 0.2s;
+        // margin: 20px;
+    }
 }
 
 .priv_policy {
@@ -1003,8 +1011,7 @@ body {
     border-radius: 8px;
 }
 
-
-.logout{
+.logout {
     // background-color: gray;
     padding: 20px 40px;
     margin: 10px;
@@ -1020,11 +1027,9 @@ body {
         transition: ease-in-out all 0.2s;
         // margin: 20px;
     }
-
 }
 
-.form_head2{
+.form_head2 {
     text-align: center;
     margin-bottom: 20px;
 }
-

@@ -43,6 +43,9 @@
                 <input class="text_box" name="zip" type="zip" class="form-control" placeholder="Zip">
                 <input class="text_box" name="country" type="country" class="form-control" placeholder="Country">
                 <input class="text_box" name="gmap_link" class="form-control" placeholder="Gmap Link">
+                <input class="text_box" name="area" class="form-control" placeholder="Area in sq cm">
+                <textarea class="text_box" rows="4" cols="50" name="about"
+                            placeholder="Description"></textarea>
             </div>
 
 
@@ -63,7 +66,7 @@
 
 </script>
 <?php
-
+include_once 'includes/dbh.inc.php';
 
 // Create database connection
 $db = mysqli_connect("localhost", "root", "", "sparepark");
@@ -76,7 +79,7 @@ if (isset($_POST['upload'])) {
     // Get image name
     $image = $_FILES['image']['name'];
     // Get text
-  
+
 
     // image file directory
     $target = "uploads/" . basename($image);
@@ -90,23 +93,45 @@ if (isset($_POST['upload'])) {
     $zip = $_POST['zip'];
     $country = $_POST['country'];
     $gmap_link = $_POST['gmap_link'];
+    $area = $_POST['area'];
+    $about = $_POST['about'];
+
 
     // $sql = "INSERT INTO space (image, `space_name`,`per_hour`,`street`,`city`,`state`,`zip`,`country`,`gmap_link`) 
     //                    VALUES ('$image', '$space_name','$per_hour','$street','$city','$state','$zip','$country',$gmap_link)";
+
+    $sql = "INSERT INTO `space` (`space_name`, `per_hour`, `image`, `street`, `city`, `state`, `zip`, `country`, `gmap_link`, `so_id`, `area`, `about`, `isApproved`) 
+    VALUES ('$space_name',' $per_hour' , '$image', '$street', '$city', '$state', '$zip', '$country', '$gmap_link', '10', '$area', '$about', '0')";
+
     // // execute query
+    // mysqli_query($db, $sql);
 
-    $sql = "INSERT INTO `space` (`space_name`, `per_hour`, `image`, `street`, `city`, `state`, `zip`, `country`, `gmap_link`, `so_id`) VALUES ('one', '12', 'rhreee', 'four', 'five', 'six', 'sev', 'eight', 'nine', '10')"
+    if (mysqli_query($conn, $sql)) {
 
-
-    mysqli_query($db, $sql);
+        $message = "Added record ";
+        echo "<script> alert('$message'); window.location.href = 'index.php' </script>";
+    } else {
+        $message = " failed record ";
+        echo "<script> alert('$message'); ";
+    }
 
     if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-        $msg = "Image uploaded successfully";
+
+        $message = "Image uploaded successfully";
+        echo "<script> alert('$message'); ";
     } else {
-        $msg = "Failed to upload image";
+
+        $message = "faiol!";
+        echo "<script> alert('$message'); ";
     }
+
+
+
+
+
+
 }
-$result = mysqli_query($db, "SELECT * FROM space");
+
 ?>
 
 

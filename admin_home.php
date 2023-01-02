@@ -22,20 +22,49 @@
 
     <div class="owner_dashboard">
         <h1>
-            OWNER DASHBOARD
+            ADMIN DASHBOARD
         </h1>
         <div class="tiles">
             <div class="tile">
-                VIEW ALL OWNED SPACES
+                VIEW ALL SPACES
             </div>
+
             <div class="tile">
-                POST A NEW SPACE
-            </div>
-            <div class="tile">
-                
+                AUTHORISATIONS
             </div>
         </div>
     </div>
+
+
+
+    <?php
+
+    include_once 'includes/dbh.inc.php';
+
+    if (isset($_POST['sf_login'])) {
+
+        $sf_email = $_POST['sf_email'];
+        $sf_password = $_POST['sf_password'];
+
+       
+        if ($sf_email == 'admin@sparepark.com' && $sf_password == 'admin123'  ) {
+            session_start();
+
+
+            $_SESSION['login'] = true;
+            $_SESSION['user_type'] = "admin";
+
+
+            echo "<script>  window.location.href = 'space_finder_home.php' </script>";
+        } else {
+            print "<p> <span>Wrong username or password</span></p>";
+        }
+    }
+
+
+
+    ?>
+
 
 
 </head>
