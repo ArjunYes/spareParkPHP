@@ -7,7 +7,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 if (isset($_SESSION["so_id"])) {
-    echo "console.log('Session so_id')";
+    // echo "console.log('Session so_id')";
     // session_destroy();
 }
 ?>

@@ -8,7 +8,7 @@ if (session_status() == PHP_SESSION_NONE) {
             echo $_SESSION["user_type"];
             echo $_SESSION["last_name"];
             echo $_SESSION["first_name"];
-            
+
             echo "<script>  window.location.href = 'space_finder_home.php' </script>";
         } else if ($_SESSION["user_type"] === 'so_login') {
             echo "<script>  window.location.href = 'space_owner_home.php' </script>";
@@ -64,9 +64,11 @@ if (session_status() == PHP_SESSION_NONE) {
                     <div class="title_desc">
                         <h1 class="title">WELCOME TO <span class="active">SPARE PARK.</span> </h1>
 
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum
-                            officia cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem
-                            perferendis officiis explicabo ipsam distinctio, facilis quos!</p>
+                        <p>Spare Park is an online platform that connects drivers in need of parking with homeowners who
+                            have extra spaces.
+                            Easily find and book parking in your city. Rent out your own spare parking space and earn
+                            extra money.
+                            A simple and effective solution to parking issues.</p>
                         <a class="big-btn " href="#spaces"> EXPLORE SPACES <i class="fa-solid fa-arrow-down "></i></a>
                     </div>
 
@@ -84,9 +86,9 @@ if (session_status() == PHP_SESSION_NONE) {
                             </div>
 
                             <div id="spaceFinderForm">
-                                <input required class="text_box" type="text" name="sf_email"
-                                    placeholder="Email id">
-                                <input required class="text_box" type="password" name="sf_password" placeholder="Password">
+                                <input required class="text_box" type="text" name="sf_email" placeholder="Email id">
+                                <input required class="text_box" type="password" name="sf_password"
+                                    placeholder="Password">
                                 <input class="btn full-width" type="submit" name="sf_login"
                                     value="Login as sapce finder">
                             </div>
@@ -112,7 +114,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
                                 $sql = "select * from spacefinder where email_id ='$sf_email' and password='$sf_password'";
                                 $result = mysqli_query($conn, $sql);
-                            
+
                                 if (mysqli_num_rows($result) > 0) {
                                     session_start();
 
@@ -123,7 +125,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                         $_SESSION['first_name'] = $first_name;
                                         $_SESSION['last_name'] = "$last_name";
 
-        
+
                                     }
 
 
@@ -146,7 +148,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
                                 $sql = "select * from spaceowner where email_id ='$sf_email' and password='$sf_password'";
                                 $result = mysqli_query($conn, $sql);
-                            
+
                                 if (mysqli_num_rows($result) > 0) {
                                     session_start();
 
@@ -154,10 +156,12 @@ if (session_status() == PHP_SESSION_NONE) {
 
                                         $first_name = $row['first_name'];
                                         $last_name = $row['last_name'];
+                                        $so_id = $row['so_id'];
                                         $_SESSION['first_name'] = $first_name;
                                         $_SESSION['last_name'] = "$last_name";
+                                        $_SESSION['so_id'] = "$so_id";
 
-        
+
                                     }
 
                                     $_SESSION['login'] = true;
@@ -271,9 +275,14 @@ if (session_status() == PHP_SESSION_NONE) {
         <div id="about" class="about">
             <div class="title_desc">
                 <h1 class="title">TRAVEL AND PARK AT EASE.</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam quis praesentium cum officia
-                    cupiditate numquam provident dolores porro assumenda, iusto mollitia exercitationem perferendis
-                    officiis explicabo ipsam distinctio, facilis quos!</p>
+                <p>Spare Park is an online platform that connects individuals who have extra parking spaces with drivers
+                    who are seeking a place to park their vehicles. This service is particularly useful in crowded urban
+                    areas like London, where it can be difficult for drivers to find parking. By renting out their
+                    unused parking spaces, homeowners can earn extra money, while drivers can reserve a spot in advance,
+                    eliminating the stress of trying to find parking when they arrive at their destination. Spare Park
+                    is a user-friendly website that allows drivers to find parking spaces easily using an interactive
+                    map, search by postcode and filter by price, duration and distance. Moreover, it is an affordable
+                    way for renters to get an extra space to park their vehicle.</p>
             </div>
             <div class="image_container">
                 <img src="images/10172815_8399 (1).jpg" alt="">
@@ -287,20 +296,20 @@ if (session_status() == PHP_SESSION_NONE) {
                 <div class="platform">
                     <i class="small_logo fa fa-regular fa-mobile"></i>
                     <h2>Mobile</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente
-                        deleniti magni, nam eligendi incidunt placeat quae!</p>
+                    <p>Spare Park offers mobile support through a dedicated iOS and Android application, allowing users
+                        to easily find and book parking spaces on-the-go.</p>
                 </div>
                 <div class="platform">
                     <i class="small_logo fa fa-thin fa-tablet"></i>
                     <h2>Tablets</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente
-                        deleniti magni, nam eligendi incidunt placeat quae!</p>
+                    <p>Spare Park also supports tablet devices through a responsive web design, providing users with a
+                        seamless experience while searching and booking parking on larger screens.</p>
                 </div>
                 <div class="platform">
                     <i class="small_logo fa  fa-regular fa-desktop"></i>
                     <h2>Desktop</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum maxime dicta sapiente
-                        deleniti magni, nam eligendi incidunt placeat quae!</p>
+                    <p>Spare Park offers full desktop support through a responsive web design, providing users with a
+                        seamless experience while searching and booking parking on their desktops.</p>
                 </div>
             </div>
 

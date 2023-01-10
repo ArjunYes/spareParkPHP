@@ -1,30 +1,27 @@
 <style>
+    .form {
+        width: 100%;
+    }
 
-.form{
-    width: 100%;
-}
+    .header {
+        margin: 30px;
+    }
 
-.header{
-    margin: 30px;
-}
+    .inp_box {
+        padding: 10px;
+        width: 100%;
+        margin-top: 20px;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
 
-.inp_box{
-    padding: 10px;
-    width: 100%;
-    margin-top: 20px;
-    border : 1px solid gray;
-    border-radius: 10px;
-}
-
-.btn{
-    padding: 30px;
-    width: 100%;
-    margin-top: 20px;
-    border : 1px solid gray;
-    border-radius: 10px;
-}
-
-
+    .btn {
+        padding: 30px;
+        width: 100%;
+        margin-top: 20px;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
 </style>
 
 <!DOCTYPE html>
@@ -55,220 +52,102 @@
     <div class="width_wrapper">
 
 
-        <center>
+
+
+
+        <!-- <center>
             <h1 class="header">EXPLORE ALL SPACES.</h1>
             <form action="" class="form">
                 <input class="inp_box" placeholder="Search" type="text" name="">
                 <input class="btn" type="submit" value="Search" name="" id="">
             </form>
-        </center>
+        </center> -->
 
 
         <div class="space_listing">
 
+            <?php
+            include_once 'includes/dbh.inc.php';
+
+            $sql = "select * from space ";
+            $result = mysqli_query($conn, $sql);
 
 
-            <div class="single_space">
-                <div class="image">
-                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
-                </div>
-                <h3 class="detail_margin space_name">SPACE AT</h3>
-                <p class="detail_margin">Location : E138QR</p>
-                <p class="detail_margin">Check at gmaps</p>
-                <div class="detail_margin star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="detail_margin">Price :11$/ph</p>
-                <button onclick="window.location.href = '/spareParkPHP/single_space.php'"
-                    class=" detail_margin btn_new">VIEW DETIALS</button>
+            if (mysqli_num_rows($result) > 0) {
 
-            </div>
 
-            <div class="single_space">
-                <div class="image">
-                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
-                </div>
-                <h3 class="detail_margin space_name">SPACE AT</h3>
-                <p class="detail_margin">Location : E138QR</p>
-                <p class="detail_margin">Check at gmaps</p>
-                <div class="detail_margin star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="detail_margin">Price :11$/ph</p>
-                <button class=" detail_margin btn_new">VIEW DETIALS</button>
-            </div>
+                while ($row = mysqli_fetch_assoc($result)) {
+                    $image = $row['image'];
+                    $gmap_link = $row['gmap_link'];
+                    print "<div class='single_space'>";
+                    print "<div class='image'>
+                            <img src='uploads/$image' >
+                        </div>";
 
-            <div class="single_space">
-                <div class="image">
-                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
-                </div>
-                <h3 class="detail_margin space_name">SPACE AT</h3>
-                <p class="detail_margin">Location : E138QR</p>
-                <p class="detail_margin">Check at gmaps</p>
-                <div class="detail_margin star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="detail_margin">Price :11$/ph</p>
-                <button onclick="window.location.href = '/spareParkPHP/spaces_listing.php'"
-                    class=" detail_margin btn_new">VIEW DETIALS</button>
-            </div>
 
-            <div class="single_space">
-                <div class="image">
-                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
-                </div>
-                <h3 class="detail_margin space_name">SPACE AT</h3>
-                <p class="detail_margin">Location : E138QR</p>
-                <p class="detail_margin">Check at gmaps</p>
-                <div class="detail_margin star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="detail_margin">Price :11$/ph</p>
-                <button class=" detail_margin btn_new">VIEW DETIALS</button>
-            </div>
 
-            <div class="single_space">
-                <div class="image">
-                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
-                </div>
-                <h3 class="detail_margin space_name">SPACE AT</h3>
-                <p class="detail_margin">Location : E138QR</p>
-                <p class="detail_margin">Check at gmaps</p>
-                <div class="detail_margin star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="detail_margin">Price :11$/ph</p>
-                <button class=" detail_margin btn_new">VIEW DETIALS</button>
-            </div>
+                    echo "<h3 class='detail_margin space_name'>SPACE NAME : ", $row['space_name'], "</h3>";
+                    echo "<p class='detail_margin'>Location : ", $row['zip'], "</p>";
 
-            <div class="single_space">
-                <div class="image">
-                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
-                </div>
-                <h3 class="detail_margin space_name">SPACE AT</h3>
-                <p class="detail_margin">Location : E138QR</p>
-                <p class="detail_margin">Check at gmaps</p>
-                <div class="detail_margin star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="detail_margin">Price :11$/ph</p>
-                <button class=" detail_margin btn_new">VIEW DETIALS</button>
-            </div>
+                    echo "<a class=detail_margin link' href='$gmap_link' target='_blank'>Click here to visit Google</a>";
 
-            <div class="single_space">
-                <div class="image">
-                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
-                </div>
-                <h3 class="detail_margin space_name">SPACE AT</h3>
-                <p class="detail_margin">Location : E138QR</p>
-                <p class="detail_margin">Check at gmaps</p>
-                <div class="detail_margin star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="detail_margin">Price :11$/ph</p>
-                <button class=" detail_margin btn_new">VIEW DETIALS</button>
-            </div>
 
-            <div class="single_space">
-                <div class="image">
-                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
-                </div>
-                <h3 class="detail_margin space_name">SPACE AT</h3>
-                <p class="detail_margin">Location : E138QR</p>
-                <p class="detail_margin">Check at gmaps</p>
-                <div class="detail_margin star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="detail_margin">Price :11$/ph</p>
-                <button class=" detail_margin btn_new">VIEW DETIALS</button>
-            </div>
+                    $space_id = $row['space_id'];
 
-            <div class="single_space">
-                <div class="image">
-                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
-                </div>
-                <h3 class="detail_margin space_name">SPACE AT</h3>
-                <p class="detail_margin">Location : E138QR</p>
-                <p class="detail_margin">Check at gmaps</p>
-                <div class="detail_margin star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="detail_margin">Price :11$/ph</p>
-                <button class=" detail_margin btn_new">VIEW DETIALS</button>
-            </div>
 
-            <div class="single_space">
-                <div class="image">
-                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
-                </div>
-                <h3 class="detail_margin space_name">SPACE AT</h3>
-                <p class="detail_margin">Location : E138QR</p>
-                <p class="detail_margin">Check at gmaps</p>
-                <div class="detail_margin star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="detail_margin">Price :11$/ph</p>
-                <button class=" detail_margin btn_new">VIEW DETIALS</button>
-            </div>
+                    echo "<div class='detail_margin star'>
+                            <i class='fa-solid fa-star'></i>
+                            <i class='fa-solid fa-star'></i>
+                            <i class='fa-solid fa-star'></i>
+                            <i class='fa-regular fa-star'></i>
+                            <i class='fa-regular fa-star'></i>
+                        </div> ";
 
-            <div class="single_space">
-                <div class="image">
-                    <img src="images/10172815_8399 (1).jpg" alt="image_park">
-                </div>
-                <h3 class="detail_margin space_name">SPACE AT</h3>
-                <p class="detail_margin">Location : E138QR</p>
-                <p class="detail_margin">Check at gmaps</p>
-                <div class="detail_margin star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="detail_margin">Price :11$/ph</p>
-                <button class=" detail_margin btn_new">VIEW DETIALS</button>
-            </div>
+                    echo "<p class='detail_margin'>Price ", $row['per_hour'], "/ph</p>";
+                    echo "     <button onclick=\"window.location.href= '/spareParkPHP/single_space.php?space_id=$space_id'\"
+                                class='detail_margin btn_new'>VIEW DETIALS</button> ";
+                    echo "     <button onclick=\"window.location.href= '/spareParkPHP/single_space.php?space_id=$space_id'\"
+                                class='detail_margin btn_new'>VIEW AVAILABLE DATES</button> ";
 
+               
+            
+                    print "</div>";
+
+
+                }
+
+
+
+
+
+
+
+            } else {
+                echo "No database available";
+            }
+
+
+            // <div class="single_space">
+            //     <div class="image">
+            //         <img src="images/10172815_8399 (1).jpg" alt="image_park">
+            //     </div>
+            //     <h3 class="detail_margin space_name">SPACE AT</h3>
+            //     <p class="detail_margin">Location : E138QR</p>
+            //     <p class="detail_margin">Check at gmaps</p>
+            //     <div class="detail_margin star">
+            //         <i class="fa-solid fa-star"></i>
+            //         <i class="fa-solid fa-star"></i>
+            //         <i class="fa-solid fa-star"></i>
+            //         <i class="fa-regular fa-star"></i>
+            //         <i class="fa-regular fa-star"></i>
+            //     </div>
+            //     <p class="detail_margin">Price :11$/ph</p>
+            //     <button onclick="window.location.href = '/spareParkPHP/single_space.php'"
+            //         class=" detail_margin btn_new">VIEW DETIALS</button>
+            
+            // </div>
+            
+            ?>
 
         </div>
 

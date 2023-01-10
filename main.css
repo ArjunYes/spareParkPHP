@@ -576,20 +576,24 @@ body {
 
 .space_listing {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25px;
+  grid-gap: 15px;
+  grid-template-columns: auto auto auto auto;
 }
 .space_listing .single_space {
+  text-align: center;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding-bottom: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 400px;
+  min-height: 380px;
+  width: 320px;
+  padding: 4%;
+  margin-bottom: 40px;
 }
 .space_listing .single_space .detail_margin {
+  text-decoration: none;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -902,4 +906,8 @@ body {
 .form_head2 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.link {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

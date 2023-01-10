@@ -1,3 +1,14 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+    $so_id = $_SESSION['so_id'];
+    if ($_SESSION["user_type"] != 'so_login') {
+        echo "<script>  window.location.href = 'index.php' </script>";
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,8 +55,7 @@
                 <input class="text_box" name="country" type="country" class="form-control" placeholder="Country">
                 <input class="text_box" name="gmap_link" class="form-control" placeholder="Gmap Link">
                 <input class="text_box" name="area" class="form-control" placeholder="Area in sq cm">
-                <textarea class="text_box" rows="4" cols="50" name="about"
-                            placeholder="Description"></textarea>
+                <textarea class="text_box" rows="4" cols="50" name="about" placeholder="Description"></textarea>
             </div>
 
 
@@ -101,7 +111,7 @@ if (isset($_POST['upload'])) {
     //                    VALUES ('$image', '$space_name','$per_hour','$street','$city','$state','$zip','$country',$gmap_link)";
 
     $sql = "INSERT INTO `space` (`space_name`, `per_hour`, `image`, `street`, `city`, `state`, `zip`, `country`, `gmap_link`, `so_id`, `area`, `about`, `isApproved`) 
-    VALUES ('$space_name',' $per_hour' , '$image', '$street', '$city', '$state', '$zip', '$country', '$gmap_link', '10', '$area', '$about', '0')";
+    VALUES ('$space_name',' $per_hour' , '$image', '$street', '$city', '$state', '$zip', '$country', '$gmap_link', '$so_id', '$area', '$about', '0')";
 
     // // execute query
     // mysqli_query($db, $sql);

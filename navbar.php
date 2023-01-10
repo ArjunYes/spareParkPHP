@@ -14,11 +14,11 @@
         <input type="checkbox" id="chkToggle"></input>
         <ul class="main-nav" id="js-menu">
             <li>
-                <a href="#" class="nav-links">Home</a>
+                <a href="index.php" class="nav-links">Home</a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="#" class="nav-links">Products</a>
-            </li>
+            </li> -->
             <li>
                 <a href="#" class="nav-links">About Us</a>
             </li>

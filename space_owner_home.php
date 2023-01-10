@@ -35,7 +35,7 @@ include 'includes/check_session_so.php';
             <div onclick="window.location.href = '/spareParkPHP/Add_parking_space.php'" class="tile hover">
                 POST A NEW SPACE
             </div>
-            <div onclick="window.location.href = '/spareParkPHP/register.php'" class="tile hover ">
+            <div onclick="window.location.href = '/spareParkPHP/spaces_listing.php'" class="tile hover ">
                 <p> VIEW ALL SPACES </p>
             </div>
         </div>
