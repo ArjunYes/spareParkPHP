@@ -20,7 +20,7 @@
                 <a href="#" class="nav-links">Products</a>
             </li> -->
             <li>
-                <a href="#" class="nav-links">About Us</a>
+                <a href="spaces_listing.php" class="nav-links">Spaces</a>
             </li>
             <li>
                 <a href="#" class="nav-links">Contact Us</a>

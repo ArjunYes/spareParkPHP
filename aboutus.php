@@ -1,11 +1,13 @@
-<?php
-include 'includes/check_session_sf.php';
-?>
+<style>
+
+</style>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
@@ -13,31 +15,47 @@ include 'includes/check_session_sf.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spare Park</title>
+    <title>Single space</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
     <?php
     include 'navbar.php';
     ?>
 
-    <div class="owner_dashboard">
-        <h1>
-            SPACE FINDER DASHBOARD
-        </h1>
-        <div class="tiles">
-            <div onclick="window.location.href = '/spareParkPHP/spaces_listing.php'" class="tile hover">
-                VIEW ALL OWNED SPACES
-            </div>
-            <div class="tile">
-                POST A NEW SPACE
-            </div>
-            <div class="tile">
 
-            </div>
-        </div>
+
+    <div class="space_info">
+
+        <h1>ABOUT US</h1>
+        <img src="images/loc.gif" alt="">
+        <p>
+
+        </p>
+
+
     </div>
 
 
-</head>
+
+
+</body>
+
+</html>
+
+
+<script src="index.js"></script>
+
+
+<?php
+
+
+
+
+?>

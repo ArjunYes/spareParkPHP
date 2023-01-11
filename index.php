@@ -122,9 +122,10 @@ if (session_status() == PHP_SESSION_NONE) {
 
                                         $first_name = $row['first_name'];
                                         $last_name = $row['last_name'];
+                                        $User_id = $row['sf_id'];
                                         $_SESSION['first_name'] = $first_name;
-                                        $_SESSION['last_name'] = "$last_name";
-
+                                        $_SESSION['last_name'] = $last_name;
+                                        $_SESSION['User_id'] = $User_id;
 
                                     }
 
@@ -157,9 +158,11 @@ if (session_status() == PHP_SESSION_NONE) {
                                         $first_name = $row['first_name'];
                                         $last_name = $row['last_name'];
                                         $so_id = $row['so_id'];
+                                        $User_id = $row['so_id'];
                                         $_SESSION['first_name'] = $first_name;
                                         $_SESSION['last_name'] = "$last_name";
                                         $_SESSION['so_id'] = "$so_id";
+                                        $_SESSION['User_type'] = "$User_id";
 
 
                                     }
@@ -191,7 +194,7 @@ if (session_status() == PHP_SESSION_NONE) {
             </div>
 
 
-            <div id="spaces" class="spaces">
+            <!-- <div id="spaces" class="spaces">
                 <h1 class="heading">SPACES</h1>
                 <div class="spaceWrapper">
 
@@ -261,7 +264,7 @@ if (session_status() == PHP_SESSION_NONE) {
                         </div>
                         <button class="btn">EXPLORE</button>
 
-                    </div>
+                    </div> -->
 
                 </div>
                 <h2 class="link" onclick="window.location.href = '/spareParkPHP/spaces_listing.php'">MORE SPACES TO
